@@ -1,0 +1,152 @@
+/* main css file for porfolio */
+
+/* custom fonts */
+@font-face {
+    font-family: Mulish-Light;
+    src: url(../fonts/Mulish-VariableFont_wght.ttf);
+    font-variation-settings: "wght" 200; /* controls variable font settings for weight: wght */
+}
+
+@font-face {
+    font-family: Garamond-Normal;
+    src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
+    font-variation-settings: "wght" 150; /* controls variable font settings for weight: wght */
+}
+
+/* main style of text/page */
+p, .d-content a {
+    font-size: 16pt;
+    font-family: Mulish-Light;
+    color: #ffffff;
+}
+
+h1, h2, .menu-button {
+    font-family: Garamond-Normal;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+body {
+    background-color: rgb(38, 39, 40);
+    
+}
+
+/* background image; done as not background-image property for more control and future parallax */
+.homepage-cover {
+    width: 1500px;
+    opacity: 50%; /* opacity on top of background is used here (as opposed to an overlay) for convenience */
+    position: fixed; 
+    top: -300px; /* width and position are static so even while resizing it looks ok */
+    left: -30px;
+}
+
+/* flex container for main content organization */
+.flex-container{
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    align-items: center;
+} /* still havent figured out how to take full width, centering seems to work ok? */
+
+.gallery-flex-container{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: left;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.gimBox-s1{
+    width: 16%;
+    align-content: center;
+}
+
+.gimBox-s2{
+    width: 33%;
+}
+
+/* navbar and children */
+ul.bottom-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 39, 40);   
+    overflow: hidden; 
+}
+
+li.left {
+    float: left;
+}
+
+li.right {
+    float: right;
+}
+
+a {
+    display: block;
+    padding: 2vh;
+    color: #ffffff;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(14, 14, 15);
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+/* buttons and menu hover display */
+/* main button format, applied to all menu buttons */
+.menu-button { 
+    vertical-align: auto;
+    background: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.menu-button a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.menu-button:hover, .menu-button a:hover {
+    color: #bebebe;
+}
+
+.d-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(38, 39, 40);
+}
+
+.d-content a {
+    text-decoration: none;
+}
+
+/* on hover, link menu is displayed */
+.dropdown:hover .d-content { display: block; }
+
+.d-content a:hover {
+    background-color: rgb(14, 14, 15);
+}
+
+.comic-page {
+    width: 100px;
+    height: 100px;
+}

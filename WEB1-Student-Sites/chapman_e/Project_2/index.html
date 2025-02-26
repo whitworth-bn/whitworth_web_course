@@ -1,0 +1,141 @@
+<!--
+Created by Eli Chapman
+Last updated 2/23/25
+Copyright 2025
+
+Description: This is the index page for my personal portfolio page
+
+Notes:
+ - robots.txt is meant to stop general webcrawlers; art should be run through glaze/nightshade
+ - fonts aquired from open foundry and google fonts
+
+Sources:
+- https://www.w3schools.com/css/ - CSS basics, includes all tabs on sidebar
+- https://stackoverflow.com/questions/50455838/flexbox-not-full-width - flexbox stuff
+- https://stackoverflow.com/questions/12048897/how-would-i-layer-an-element-below-another - position above/below
+- https://www.w3schools.com/html/ - HTML basics, includes all tabs on sidebar
+- https://www.w3schools.com/cssref/atrule_font-face.php - fonts
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide - variable fonts
+- https://www.w3schools.com/howto/howto_css_dropdown.asp
+- https://www.w3.org/MarkUp/html3-tables/alignment.html - how to align horizontally in tables
+- https://www.geeksforgeeks.org/html-align-attribute/ - why align is outdated
+- https://www.dhiwise.com/post/html-open-link-in-new-tab-improve-user-navigation - going to a new tab when clicking a link
+- https://www.w3schools.com/howto/howto_js_slideshow.asp - making a slideshow (for comics)
+- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto
+- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
+- https://stackoverflow.com/questions/24626908/how-to-get-rid-of-extra-space-below-svg-in-div-element
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Eli Chapman - Identity Through Art</title>
+    <link rel="stylesheet" href="stylesheets/style1.css">
+    <link rel="icon" href="images/Logo.png"> <!--favicon-->
+
+</head>
+
+<body>
+
+    <!--background image, will have things on top of it-->
+    <img class="homepage-cover" src="images/porfolio-art/traditional/Sunset_Walk.png" style="z-index: -1;">
+
+    <!--main layout of page-->
+    <div class="flex-container" style="z-index: 0;">
+        <!--blank div "box" is set to view height to allow seeing BG image-->
+        <div style="height: 100vh; align-content: center;">
+            <!--main menu is placed in the center of the empty box-->
+            <table>
+                <tr>
+                    <td align="right">
+                        <img src="images/Logo.png" style="height: 125px;">
+                    </td>
+                    <td align="left">
+                        <!-- align is reccomended to be transfered into css -->
+                        <h1 style="">Eli Chapman</h1> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <!-- second table is used to align buttons across the colspan w/o depening on number -->
+                        <table class="t-menu">
+                            <tr>
+                                <td>
+                                    <button class="menu-button">
+                                        <a href="./about.html">About Me</a>
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="menu-button d-button">Art & Design</button>
+                                        <div class="d-content">
+                                            <a href="./traditional-art.html">Traditional</a>
+                                            <a href="./digital-art.html">Digital</a>
+                                            <a href="./comics.html">Comics</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="menu-button d-button">Technical Projects</button>
+                                        <div class="d-content">
+                                            <a href="">Coming Soon!</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="menu-button d-button">Radio & Podcasts</button>
+                                        <div class="d-content">
+                                            <!-- noopener etc copied from https://www.dhiwise.com source to prevent some security concerns -->
+                                            <a href="https://www.whitworthradio.com/" target="_blank" rel="noopener noreferrer">Whitworth Radio</a>
+                                            <a href="https://open.spotify.com/show/3iHj1msCe6p6W4GeY8MZKP" target="_blank" rel="noopener noreferrer">A Very Normal Job Interview</a>
+                                            <a href="https://open.spotify.com/show/7z2vKIqOejYljkPAVhijET" target="_blank" rel="noopener noreferrer">Diagnoses and Dragons</a>
+                                            <a href="https://open.spotify.com/show/1VM0MpkA3njNZQ5J4aG63I" target="_blank" rel="noopener noreferrer">Incoming Broadcast...</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--second div "box" is set a grey background for text/images-->
+        <div style="height: 600px; width: 100vw; background-color: rgb(38, 39, 40);" >
+            <table style="width: 80vw; margin: auto;">
+                <tr>
+                    <td style="width: 50%;">
+                        <p style="padding: 10px;">
+                            Hello! My name is Eli, and this is my portfolio! Here you can find links to a more expansive bio, as well as a full gallery of works; artistic and otherwise.
+                            <br><br>
+                            I hope you enjoy looking through my site! Feel free to reach out at my email or LinkedIn, but just make sure to give me context :).
+                        </p>
+                    </td>
+                    <td style="width: 50%;" align="center">
+                        <img src="images/heheme.png" style="height: 425px; padding-top: 100px;" >
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+
+    <!--bottom navbar-->
+    <!--links to other sections of website are left, right is socials-->
+    <div class="flex-container">
+        <ul class="bottom-navbar" style="z-index: 1; width: 100vw;">
+            <li class="left"><a href="./index.html">Home</a></li>
+            <li class="left"><a href="./about.html">About Me</a></li>
+            
+            <li class="right"><a href="https://www.linkedin.com/in/eli-chapman-ffffff/"><img src="images/icons/linkedInlogo-tm.png" style="height: 17px; display: block;"></a></li>
+            <!-- modified the viewbox manually, but still a bit funky. id like to fix in future -->
+            <li class="right"><a href="mailto:elichap9@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -850 960 960" width="21px" fill="#e3e3e3" style="display: block;"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
