@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Eli Chapman - Comics</title>
+    <link rel="stylesheet" href="stylesheets/style1.css">
+    <link rel="icon" href="images/Logo.png"> <!--favicon-->
+    <script>
+        //this is js for making a slideshow - heavily referencing w3 schools
+        let sIndex;
+        
+        // undates index then sends image hierarchy to be rebuilt
+        function safeRightTurn(){
+            sIndex++;
+            displaySlideOnIndex();
+        }
+        function safeLeftTurn(){
+            sIndex--;
+            displaySlideOnIndex();
+        }
+
+        // rebuilds image heirarchy by getting all image elements, hiding them, then displaying the one marked by the current sIndex
+        function displaySlideOnIndex(){
+            // gets all "comic-page" elements
+            let allPages = document.getElementsByClassName("comic-page");
+            // hides all comic-page elements by defualt
+            for (i = 0; i < allPages.length; i++){
+                allPages[i].style.display = "none";
+            }
+
+            // visualizing human v computer counting
+            // sIndex   1 2 3 4 5
+            // aP.len 0 1 2 3 4
+
+            // prevents right overflow
+            if (sIndex-1 >= allPages.length){
+                sIndex = 1;
+            }
+            // prevents left overflow
+            if (sIndex < 1){
+                sIndex = allPages.length;
+            }
+
+            // sets the slide index and then sets the appropriate image to be visible
+            allPages[sIndex-1].style.display = "block";
+        }
+
+        // sets up the page on load
+        function pageSettup(){
+            sIndex = 1;
+            displaySlideOnIndex();
+        }
+        
+    </script>
+
+</head>
+
+<body onload="pageSettup()">
+
+    <div class="flex-container"> <!--main content is placed in a flex container for easy centering/spacing-->
+        <div class="comic-container">
+            <!-- page 1 -->
+            <img class="comic-page" src="images/memes.webp">
+        </div>
+        <div class="comic-container">
+            <!-- page 2 -->
+            <img class="comic-page" src="images/Mushrooms-full.png">
+        </div>
+        <div class="comic-container">
+            <!-- page 3 -->
+            <img class="comic-page" src="images/Logo.png">
+        </div>
+        <!-- icons from google icons https://fonts.google.com/icons?selected=Material Symbols Outlined%3Aarrow_forward%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024&icon.size=24&icon.color=%23e3e3e3 -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" onclick="safeRightTurn()" style="float: left;"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" onclick="safeLeftTurn()"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+    </div> 
+
+    <!--spacer-->
+    <div style="height: 600px"></div>
+
+    <!--bottom navbar-->
+    <!--links to other sections of website are left, right is socials-->
+    <div class="flex-container">
+        <ul class="bottom-navbar" style="z-index: 1; width: 100vw;">
+            <li class="left"><a href="./index.html">Home</a></li>
+            <li class="left"><a href="./about.html">About Me</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
