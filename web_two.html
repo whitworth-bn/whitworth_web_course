@@ -12,13 +12,13 @@
 		font-size: 50px;
 		color:antiquewhite;
 		text-align: right;
-		bottom: 180px;
+		bottom: 135px;
 		width: 97%;
 	}
 	.lrgfooter {
 		position: fixed;
 		font-weight; bolder;
-		font-size: 200px;
+		font-size: 150px;
 		color:antiquewhite;
 		text-align: right;
 		bottom: 0px;
@@ -35,10 +35,30 @@
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		padding: 12px 16px;
-		bottom: 180px;
+		bottom: 135px;
 		z-index: 1;
 	}
 	.upmenu:hover .upmenu-content {
+		display: block;
+	}
+	
+	.stumenu {
+		position: relative;
+		display: inline-block;
+		float: right;
+		right: 20px;
+	}
+	.stumenu-content {
+		display: none;
+		position: absolute;
+		background-color: #730000;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 0px 6px 0px 24px;
+		right: 20px;
+		z-index: 1;
+	}
+	.stumenu:hover .stumenu-content {
 		display: block;
 	}
 body,td,th {
@@ -69,17 +89,30 @@ a:active {
 </head>
 
 <body>
-	<div class="smlfooter">AR3/426 WEB DESIGN
-</div>
-	<div class="lrgfooter">
-	<div class="upmenu">
-	<span>student_sites</span>
-	<div class="upmenu-content">
-		<div class="menulinks"
-			 <p> <a href="web_one.html">web_ONE</a></p>
-			 <p> <a href="web_two.html">web_TWO</a></p>
-	  </div>
+	<div class="smlfooter">AR426 WEB DESIGN
 	</div>
-</div>
+	<div class="lrgfooter">
+		<div class="upmenu">
+		<span>web_TWO_creatives</span>
+			<div class="upmenu-content">
+				<div class="menulinks">
+			 	<p> <a href="index.html">web_ZERO</a></p>
+			 	<p> <a href="web_one.html">web_ONE</a></p>
+	  			</div>
+			</div>
+		</div>
+	</div>
+	<div class="stumenu">
+	<span>student_projects</span>
+		<div class="stumenu-content">
+			<div class="menulinks">
+			<p><a href="web2project1">parallax_HTML</a></p>
+			<p><a href="web2project2">project_2</a></p>
+			<p><a href="web2project3">project_3</a></p>
+			<p><a href="web2project4">project_4</a></p>
+
+			</div>
+		</div>
+	</div>
 </body>
 </html>
