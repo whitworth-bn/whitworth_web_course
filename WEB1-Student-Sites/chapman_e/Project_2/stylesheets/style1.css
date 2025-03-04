@@ -147,6 +147,6 @@ li a:hover {
 }
 
 .comic-page {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 95vh;
 }
