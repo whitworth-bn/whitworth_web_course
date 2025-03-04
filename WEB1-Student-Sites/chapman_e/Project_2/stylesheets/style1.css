@@ -15,7 +15,6 @@
 
 /* main style of text/page */
 p, .d-content a {
-    font-size: 16pt;
     font-family: Mulish-Light;
     color: #ffffff;
 }
@@ -23,6 +22,10 @@ p, .d-content a {
 h1, h2, .menu-button {
     font-family: Garamond-Normal;
     color: #ffffff;
+}
+
+p {
+    font-size: 16pt;
 }
 
 h1 {
@@ -116,12 +119,11 @@ li a:hover {
     background: none;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 20px;
+    font-size: 22px;
     border: none;
 }
 
 .menu-button a {
-    font-size: 18px;
     text-decoration: underline;
 }
 
@@ -137,6 +139,7 @@ li a:hover {
 
 .d-content a {
     text-decoration: none;
+    font-size: 20px;
 }
 
 /* on hover, link menu is displayed */
