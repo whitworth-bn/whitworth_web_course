@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JH Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/slides.js" defer></script>
+</head>
+
+<body>
+    <div class = "banner">
+    </div>
+    <div class = "logo">
+        <img src="img/JHLogoBWI.png">
+    </div>
+
+    <div class = "title">
+        <h1>The Work of Jace Hanson</h1>
+    </div>
+
+    <div class = "menu">
+        <ul>
+            <li><a href="index.html" id = "home">Home</a></li>
+            <li><a href="p2about.html" id = "about">About</a></li>
+            <div class = "dropdown">
+                <li><a href="#">Gallery</a></li>
+                <div class = "droptent">
+                    <ul>
+                        <li><a href="p3A-Digital.html">Digital</a></li>
+                        <li><a href="p3B-Physical.html">Physical</a></li>
+                    </ul>
+                </div>
+            </div>
+            <li><a href="p4contact.html" id = "contact">Contact</a></li>
+        </ul>
+    </div>
+    <hr width="60%">
+
+<div id="slideshow">
+    <table>
+        <tr>
+            <td><a href="#" onclick="change(1)"><img src="img/slide1.png"  class = "thumb" id="slide1"></a></td>
+            <td rowspan="3"><img src="img/slide1.png" id="display"></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="change(2)"><img src="img/slide2.png"  class = "thumb" id="slide2"></a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="change(3)"><img src="img/slide3.png"  class = "thumb" id="slide3"></a></td>
+        </tr>
+    </table>
+    
+    <!--
+    <a href="#"><</a>
+    <picture>
+        <img src="img/slide3.png" style="width: auto;" id="display2">
+    </picture>
+    <a href="#">></a>
+    -->
+</div>
+
+</body>
