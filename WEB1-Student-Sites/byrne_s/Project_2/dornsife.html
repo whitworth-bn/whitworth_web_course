@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+            Sophie's Portfolio
+        </title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/bsl0nfm.css">
+    </head>
+
+    <body>
+		<div class="header">
+	    	<img src="images/AR325_PersonalLogoLong.png" width="498" height="200" alt=""/> 
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="dornsife.html">Dornsife Projects</a></li>
+			<li><a href="webdesign.html">Web Design</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Other Projects</a>
+				<div class="dropdown-content">
+					<a href="illustrations.html">Illustrations</a>
+					<a href="branding.html">Branding</a>
+					<a href="cppsimulator.html">C++ Zombie Simulator</a>
+				</div> <!-- This closing tag was missing -->
+			</li>
+		</ul>	
+		<h1>Service-Learning Application</h1>
+		<img src="images/ServiceLearningMockup.jpg" class="dornsifeimg">
+		<p class="dornsifedesc">
+			For this Human-Computer Interaction project, we worked with our university's community engagement center to create a better system for connecting classes with outside non-profits through service-learning. This was done over the course of the semester and included two iterations through the design lifecycle (understand needs, design solutions, prototype candidates, and evaluate UX). Each step of the cycle was completed with new groups comprised of 2-4 members. 
+		</br></br>
+			<b>Step 1: Understand Needs</b></br>
+			This step included creating a data elicitation plan specific to the community non-profit we were assigned, carrying out that data elicitation with the partner, and organizing/analyzing that data. For our data elicitation, we conducted an interview and took notes as needed. We then organized those raw data notes in user work notes. Lastly, we used the card sorting method to organize those notes. Shown here is an example of the final analyzed data.  
+		</br></br>
+		<b>Step 2: Designing Solutions</b></br>
+			To begin the next stage we took the organized data above and created data models based on it. These models included user work roles, user personas, a flow model, a task sequence model, an information architecture model, UX requirements, and user stories. We then created concept, ecological, interaction, and emotional designs as well as a style guide. Shown here are examples of our concept and ecological designs, our flow model, and our task sequence model. 
+		</br></br>
+		<b>Step 3: Prototyping</b></br>
+			For this step, each group took the information gathered from each community partner and used it to create a prototype. Because our engagement center did not have an exact idea of what they wanted the system to be prototypes between the groups varied. To streamline the process for the UX evaluation, we decided to choose one prototype to go forward with. Shown here is my prototype for the 1st iteration, which was not chosen to go through a second iteration. It emphasizes a simpler process for discovering which class should be paired with each organization through a survey. As a 1st iteration, it is a rough prototype. This picture is of the final results page that displays which class is the best fit and provides an opportunity to learn more about each class. 
+		</br></br>
+		<b>Step 4: UX Evaluation</b></br>
+			For this step, we completed UX Evaluation with a non-profit partner through a think-aloud evaluation session. This was done by showing the partner the prototype we went forward with and letting them interact with it, saying their thoughts aloud as they interacted. We also completed an evaluation within our team. Using a design heuristic walkthrough, we compared the quality of our system with that of 10 design heuristics. Shown are examples of our final data output from our think-aloud evaluation. 
+		</br></br>
+		<b>Step 5: Second Iteration</b></br>
+			After completing all steps of the design lifecycle and narrowing down to a single prototype for the class, we were tasked in pairs to take the UX Evaluation and complete a second lifecycle. We created a specified data elicitation to complete with a new non-profit partner, created new models and designs where changes were needed, improved upon the current prototype, and completed a second UX evaluation with the improvements made. Shown are screenshots from the final prototype. 
+		</p>
+		<h1>Spokane Mural Website</h1>
+		<img src="images/SpokaneMuralMockup.jpg" class="dornsifeimg">
+		<p class ="dornsifedesc">
+			This project was done for an Internet Applications Development class in January of 2022. For the project, we were given two weeks to complete a web-based project paired with a non-profit from the Spokane area. My group was paired with our university's community engagement center to help them create a website featuring artwork of the greater Spokane area as well as interactivity throughout the photo to enable viewers to learn more about each part of Spokane that was portrayed. 
+		</br></br>
+			We began our process by interviewing the main commissioners from of the organization to determine expectations. We then created a simple mockup of the site on both mobile and web. It was important that we make the website mobile-friendly because people were mainly going to be accessing it through a QR code near the physical location of the mural. We decided that due to the unique and solitary function of the site we would "hard-code" it using HTML, CSS, and JavaScript. 
+		</br></br>
+			Our site features a function that, when a pin is clicked, the text at the bottom changes based on which location was chosen. We completed this by placing pins at certain coordinates on the photo itself and tagging each pin with the location it was over. We then created the section for each of the text with two different types of section tags to differentiate hidden and shown sections. When the user interacts with a certain pin, the JavaScript code changes the tag value of the associated text to "shown", which in turn changes the actual text shown at the bottom section of the screen. 
+		</br></br>
+			A challenge we faced when making the site mobile-friendly was the size of the image. We debated making the user change their own screen orientation to landscape, but decided instead to use media query to determine the size of the screen and change the orientation accordingly. Currently, if a user goes onto the site on mobile, the will be able to scroll the image side-to-side and the bottom text up and down in order to view the content of the entire page. 
+		</p>
+		<a href="https://github.com/sbyrne03/dornsife-spokane-mural">
+			<button class="cppbutton">See the Code</button>
+		</a>
+	</body>
+</html>
