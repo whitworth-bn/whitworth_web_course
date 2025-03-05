@@ -72,19 +72,23 @@ body {
     flex-flow: wrap column;
     align-items: center;
     width: 33.3333%;
+    justify-content: normal;
+    
     /* items base percentage width on thier parent */
 } 
 
+/* gim1 is a flex box to evenly space its children and add padding*/
 .gimBox-s1{
-    width: 96%;
+    width: 98%;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 1.5%;
 
 
 }
 
 .gimBox-s2{
     width: 98%;
-
-    
 }
 
 /* navbar and children */
