@@ -1,0 +1,175 @@
+@font-face {
+    font-family: JetBrainMono;
+    src: url(../assets/JetBrainsMono-Medium.ttf);
+}
+
+body {
+    background-color: #332727;
+    border: 30px solid #8587d4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-bottom: 5px solid #8587d4;
+    flex-direction: column;
+    background: linear-gradient(to right,  #314f66 0%, #8587d4 50%, #314f66 100%);
+}
+
+.headerContainer h1 {
+    font-family: 'JetBrainMono';
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+    font-family: 'JetBrainMono';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+    font-family: 'JetBrainMono';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contentWrapper {
+    display: flex; /* Use flexbox to align the text block and image */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+}
+
+@media screen and (max-width: 900px) {
+    .contentWrapper {
+        display: flex; /* Use flexbox to align the text block and image */
+        align-items: center; /* Vertically center the items */
+        justify-content: center; /* Horizontally center the items */
+        flex-direction: column;
+    }
+ }
+
+.contentWrapperArt {
+    display: flex; /* Use flexbox to align the text block and image */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    padding: 20px;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+    .contentWrapperArt {
+        display: flex; /* Use flexbox to align the text block and image */
+        align-items: center; /* Vertically center the items */
+        justify-content: center; /* Horizontally center the items */
+        padding: 20px;
+        flex-direction: column;
+    }
+ }
+
+
+.mainContentHomePage {
+    display: flex;
+    flex-direction: column; /* Make the flex items stack vertically */
+    justify-content: center; /* Center the flex items vertically */
+    align-items: center; /* Center the flex items horizontally */
+    height: 100vh;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column; /* Make the flex items stack vertically */
+    justify-content: center; /* Center the flex items vertically */
+    align-items: center; /* Center the flex items horizontally */
+    border-bottom: 2px solid #8587d4;
+}
+
+
+.imageContainer {
+}
+
+.imageContainer img {
+    width: 60vh;
+    height:auto;
+}
+
+.imageContainerAbout img {
+    width: 35vh;
+    height:auto;
+}
+
+@media screen and (max-width: 900px) {
+    .imageContainer img {
+       width: 40vh;
+       height:auto;
+    }
+ }
+
+.boundingBox {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 5%, rgba(133,135,212, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.boundingBoxWork {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 2%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.boundingBoxEdu {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 2%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.boundingBoxContact {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 5%, rgba(133,135,212, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.boundingBox p {
+    line-height: 1;
+}
+
+
+/* Background Image */
+.background {
+    min-height: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(51, 39, 39)), url('../assets/riverCloseup.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}

@@ -1,0 +1,17 @@
+/* Fonts */
+.nameText {
+    font-family: 'JetBrainMono';
+    font-size: 30px;
+    color:#314f66;
+}
+
+.introText {
+    font-family: 'JetBrainMono';
+    font-size: 20px;
+    color:#314f66;
+}
+
+.otherText {
+    font-family: 'JetBrainMono';
+    color:#314f66;
+}
