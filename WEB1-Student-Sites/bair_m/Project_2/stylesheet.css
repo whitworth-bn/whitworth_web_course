@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*drop down menu*/
+.menu {
+	align-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+	font-family:"Bouba Round Var Regular Regular";
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.banner{ 
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/*Front image*/
+.Homepic{	float: right;
+	vertical-align: inherit;
+	background-color:rgba(189,202,192,1.00);
+	width:500;
+	border: 15px rgba(189,202,192,1.00);
+  padding: 40px;
+	margin-top:50px;
+	margin-right:160px;
+}
+
+/*Homepage Text*/
+.hometext{font-family:"Bouba Round Var Regular Regular";
+	font-size:20px;
+	background-color:rgba(189,202,192,1.00);
+	width:300px;
+	height:100px;
+	border: 15px rgba(189,202,192,1.00);
+  padding: 40px;
+  margin-left:125px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	vertical-align: middle;
+	
+}
+/*drop down*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+	padding:25px;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+	font-family: "Bouba Round Var Regular Regular";
+	font-size:30px;
+}
+
+/*Headers*/
+h1{
+	color:black;
+	font-family:"Bouba Round Var Regular Regular";
+	font-size:65px;
+	text-align: center;
+}
+h2{
+	color:black;
+	font-family:"Bouba Round Var Regular Regular";
+	font-size:40px;
+	text-align: center;
+	background-color: rgba(189,202,192,1.00);align-content: center
+}
+
+h3{
+	color:black;
+	font-family:"Bouba Round Var Regular Regular";
+	font-size:40px;
+}
+/*Paragraphs*/
+p{
+	font-family:"Bouba Round Var Regular Regular";
+	font-size:20px;
+	background-color:rgba(189,202,192,1.00);
+	width:400px;
+	height:516px;
+	border: 15px rgba(189,202,192,1.00);
+  padding: 40px;
+  margin-left:125px;
+	margin-bottom: 50px;
+	vertical-align: middle;
+}
+.p1{
+	font-family:"Bouba Round Var Regular Regular";
+	font-size:20px;
+	background-color:rgba(189,202,192,1.00);
+	width:300px;
+	height:100px;
+	border: 15px rgba(189,202,192,1.00);
+  padding: 40px;
+  margin-left:125px;
+	margin-bottom: 50px;
+	vertical-align: middle;
+}
+
+/*Background Colors*/
+body{background-color: rgb(162,178,166)}
+
+/*Images*/
+img{
+	vertical-align: middle;
+	align-content: center;
+}
+
+.portrait{
+	float: right;
+	vertical-align: inherit;
+	background-color:rgba(189,202,192,1.00);
+	width:360px;
+	height:516px;
+	border: 15px rgba(189,202,192,1.00);
+  padding: 40px;
+	margin-top:none;
+	margin-right:160px;
+}
