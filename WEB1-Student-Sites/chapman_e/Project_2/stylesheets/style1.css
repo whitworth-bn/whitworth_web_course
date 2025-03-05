@@ -58,22 +58,33 @@ body {
     align-items: center;
 } /* still havent figured out how to take full width, centering seems to work ok? */
 
-.gallery-flex-container{
+.gallery-flex-wrapper{
     display: flex;
-    flex-flow: wrap row;
+    flex-flow: nowrap row;
     align-items: left;
     width: 80%;
     margin: auto;
     justify-content: space-between;
 }
 
+.gallery-flex-container{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    width: 33.3333%;
+    /* items base percentage width on thier parent */
+} 
+
 .gimBox-s1{
-    width: 16%;
-    align-content: center;
+    width: 96%;
+
+
 }
 
 .gimBox-s2{
-    width: 33%;
+    width: 98%;
+
+    
 }
 
 /* navbar and children */

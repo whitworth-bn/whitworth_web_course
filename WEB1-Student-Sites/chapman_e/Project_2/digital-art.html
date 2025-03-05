@@ -10,46 +10,73 @@
 </head>
 
 <body>
+    <!-- header is in main flex container -->
     <div class="flex-container">
-        <h2>Digital Art</h2>
+        <h1>Digital Art</h1>
         <p><i>a collection of my digital art</i></p>
     </div>
 
-    <div class="gallery-flex-container"> <!--main content is placed in a flex container for easy centering/spacing-->
-        <!-- gal-img-s (1 or 2) determines the size, inside a div container taking 100% of space from parent makes sure it fits in the box but doesnt get distorted -->
-        <!-- it also means images can be stacked -->
-        <div class="gimBox-s2">
-            <img src="images/porfolio-art/digital/idk.webp" style="width: 100%;">
-        </div>
-        <div class="gimBox-s1">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-        </div>
-        <div class="gimBox-s2">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-        </div>
-        <div class="gimBox-s1">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-            <img src="images/porfolio-art/digital/idk.webp" style="width: 100%;">
-        </div>
-        <div class="gimBox-s2">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-        </div>
-        <div class="gimBox-s2">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-        </div>
-        <div class="gimBox-s1">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-        </div>
-        <div class="gimBox-s1">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-            <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
-        </div>
-    </div> 
+    <!-- wrapper aligns stuff on the page,  -->
+    <!-- container creates a column (that can be made flexible) to hold the art and keep it aligned properly, -->
+    <!-- gimBox-s2 (or s1; 2 is normal, 1 is half-size) determines the size of the image -->
+    <!-- using a flex container b/c I'm basically creating a funky table; so it can have auto sized columns and adaptability -->
+    <div class="gallery-flex-wrapper">
+        <div class="gallery-flex-container"> <!--main content is placed in a flex container for easy centering/spacing-->
+            
+            <!-- images can be stacked -->
+            
+            <!-- opening eye pt.1 -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/opening-eye-1.png" style="width: 100%;">
+            </div>
+            <!-- override vent -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/override.png" style="width: 100%;">
+            </div>
+            <!-- arend sticker -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/arend-sticker-wip.png" style="width: 100%;">
+            </div>
 
+        </div>
+
+        <div class="gallery-flex-container">
+            
+            <!-- opening eye pt.2 -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/opening-eye-2.png" style="width: 100%;">
+            </div>
+            <!-- dorothy in wonderland poster -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/dorothy_in_wonderland.png" style="width: 100%;">
+            </div>
+            <!-- isometric room -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/isometric_room.png" style="width: 100%;">
+            </div>
+
+        </div>
+
+        <div class="gallery-flex-container">
+            
+            <!-- opening eye pt.3 -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/opening-eye-3.png" style="width: 100%;">
+            </div>
+            <!-- mushrooms -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/Mushrooms-full.png" style="width: 100%;">
+            </div>
+            <!-- keeth concept art -->
+            <div class="gimBox-s2">
+                <img src="images/porfolio-art/digital/keeth_concept_art.png" style="width: 100%;">
+            </div>
+            
+        </div> 
+    </div>
+    
     <!--spacer-->
-    <div style="height: 600px"></div>
+    <div style="height: 200px"></div>
 
     <!--bottom navbar-->
     <!--links to other sections of website are left, right is socials-->
