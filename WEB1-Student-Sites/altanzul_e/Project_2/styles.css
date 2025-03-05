@@ -1,0 +1,140 @@
+body {
+    width: 80%; 
+    max-width: 1920px; 
+    margin: 0 auto; 
+    background-color: black; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    text-align: left; 
+}
+.bot-right {
+    position: absolute;
+    right: 0px; 
+    top: 305px; 
+    width: 170px;
+    height: auto;
+    border-radius: 0px;
+	z-index: 3;
+}
+.plaxmn-big {
+    position: absolute;
+    right: 0px; 
+    top: 80px; 
+    width: 1600px;
+    height: auto;
+    border-radius: 0px;
+	z-index: 2;
+}
+.bar {
+    position: absolute;
+    left: 860px; 
+    top: 10; 
+    width: 150px;
+    height: auto;
+    border-radius:0px;
+	z-index: 4;
+}
+.erka {
+    position: absolute;
+    left: 500px; 
+    top: 30px; 
+    width: 120px;
+    height: auto;
+	
+}
+.logodes {
+    position: absolute;
+    left: 10px; 
+    top: 100px; 
+    width: 140px;
+    height: auto;
+    border-radius:0px;
+	z-index: 5;
+}
+.top-left {
+    position: absolute;
+    left: 0px; 
+    top: 80px; 
+    width: 170px;
+    height: auto;
+    border-radius:0px;
+	z-index: 4;
+}
+.midx {
+    position: absolute;
+	left: 800px;
+    top: 550px; 
+    width: 400px;
+    height: auto;
+    border-radius:0px;
+}
+
+.print {
+    position: absolute;
+	left: 400px;
+    top: 550px; 
+    width: 400px;
+    height: auto;
+    border-radius:0px;
+}
+.illust {
+    position: absolute;
+	left: 1100px;
+    top: 550px; 
+    width: 400px;
+    height: auto;
+    border-radius:0px;
+}
+.photo {
+    position: absolute;
+	right: 0;
+    top: 550px; 
+    width: 400px;
+    height: auto;
+    border-radius:0px;
+}
+.omen {
+    position: absolute;
+	left: 0px;
+    top: 550px; 	
+    width: 400px;
+    height: auto;
+    border-radius:0px;
+}
+.text-position-1 {
+    position: absolute; 
+    left: 878px;  
+    top: 0px;   
+    color: black;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 5;
+}
+.text-position-2 {
+    position: absolute; 
+    left: 1060px;  
+    top: 0px;   
+    color: lightgray;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 5;
+}
+.text-position-3 {
+    position: absolute; 
+    left: 710px;  
+    top: 0px;   
+    color: lightgray;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 5;
+}
+.text-position-5 {
+    position: absolute; 
+    left: 1190px;  
+    top: 0px;   
+    color: lightgray;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 5;
+}

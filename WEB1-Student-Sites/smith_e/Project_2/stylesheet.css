@@ -1,0 +1,125 @@
+
+/* CSS Document */
+
+body{background-color: cornsilk;}
+
+p {
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+ 
+h1 {text-decoration-color: brown; font-size: 15px; align-content: center}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color:coral;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.my-email{
+	text-decoration:none 
+}
+
+h1{font-size: 30px; text-align:right; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif" }
+
+p {text-align:right; font-size:21px; color:lightcoral}
+
+p.big {line-height: 2;}
+
+.italy {float: left;}
+
+.artists {
+	color:coral; font-family:Comfortaa; background-color:white;
+	width: 265px;
+}
+
+.artist-container{
+	width: 100%;
+	display: flex;
+	justify-content: center
+}
+
+.etsy{align:center}
