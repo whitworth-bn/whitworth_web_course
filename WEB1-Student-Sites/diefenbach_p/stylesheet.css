@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+body {background-color:#fbeccc
+	}
+h1{
+	color: #fbeccc;
+}
+h1{
+	font-family: "Basco Std Regular", "Arial Bold", "Avenir Black", "Gill Sans"
+}
+h2{
+	font-family: "Basco Std Regular", "Arial Bold", "Avenir Black", "Gill Sans"
+}
+h2{ background-color: }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ul {
+	text-align: center;
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d3446b;
+}
+li {
+	display: inline-block;
+  float: center;
+}
+
+li a {
+  display: block;
+  color: #fbeccc;
+  text-align: center;
+  padding: 14px 16px;
+  font-family:"Komet Regular", "Komet Thin", "Komet Medium", "American Typewriter", "Arial Narrow";
+}
+
+li a:hover {
+  background-color: #F1BC58;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);  
+  padding: 10px 20px; 
+  font-size: 50px; 
+  text-align: center;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+padding-top: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+    text-align: center;
+	position: relative;
+    display: block;
+	float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	text-align: center
+}
+
+.dropdown-content a:hover {background-color: #F1BC58;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbeccc;
+  padding: 20px;
+  font-family: "Komet Regular", "Komet Thin", "Komet Medium", "American Typewriter", "Arial Narrow";
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -15px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #F8F1EC;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+}
+
+div.scroll-container {
+  background-color:white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+p3{
+	font-family: "Komet Regular", "Komet Thin", "Komet Medium", "American Typewriter", "Arial Narrow"
+} 
+p3{float: left}
