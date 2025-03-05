@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Main Font";
+    src: url("NanumSeGyeJeogInHanGeur.ttf");
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+body {
+    background-color: #F4C430;
+    font-family: "Main Font", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+    background: transparent;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px 40px;
+    color: #757575;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li:hover a {
+    color: #fff;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button Styling for Portfolio */
+.dropbtn {
+    padding: 25px 40px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #757575;
+    cursor: pointer;
+}
+
+.main {
+    max-width: 100px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px -8px;
+}
+
+
+h3 {
+
+	text-align: center;
+}
+.content {
+    background-color: gray;
+    padding: 20px;
+}
+
