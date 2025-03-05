@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+.container {
+	background-color: #FFFFFF;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-width: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: center 
+}
+.secondary_header {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #0B0000;
+	clear: left; 
+}
+
+.container .secondary_header ul {
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	width: 100%;
+}
+.secondary_header ul a {
+	list-style: none;
+	float: left;
+	margin-top: 0px;
+	font-family: Baskerville, 'Palatino Linotype';
+	font-weight: bold;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	width: 16%;
+	transition: all 0.3s linear;
+}
+.secondary_header ul a:hover {
+	color: #717070;
+	cursor: pointer;
+} 
+
+body {
+  background-color: darkred;
+}
+h1 {
+  color: Black;
+  text-align: center;
+}
+
+h1 {
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  font-size: 90px;
+}
+h3 { 
+font-size: 40px
+ }
+h3 { 
+text-align: center}
+h4 {
+  color: black;
+  text-align: center;
+}
+h4 {
+  font-family: verdana;
+  font-size: 30px;
+}
+a  {  
+  Color: white;
+  text-align: center; 
+  font-size: 20px;
+} 
+p2  { 
+  text-align: center; 
+  Color: white;
+  font-family: "Palatino Linoty";
+  font-size: 25px
+}
+/* 
+Define this in your CSS 
+.bgColor = Replace it by the name you want to give your animation
+.bgAnimObj = Assign this class to the object you want to apply the effect
+*/
+
+body {
+	background: darkred;
+	/* Chrome, Safari */
+	-webkit-animation: bgColor 30s;
+	/* Firefox */
+	-moz-animation: bgColor 30s;
+	/* Standard Syntax */
+	animation: bgColor 30s;
+	animation-duration: 20s; 
+	animation-iteration-count: infinite
+
+}
+/* 
+Define the keyframe and changes
+*/
+
+/* Chrome, Safari */
+@-webkit-keyframes bgColor {
+	from {
+ 		background: darkred;
+	} 
+	to {
+ 		background: #FF6062;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes bgColor {
+    from {
+        background: darkred;
+    }
+    to {
+        background: #FF6062;
+    }
+}
+
+/* Standard syntax */
+@keyframes bgColor {
+	from {
+		background: darkred;
+	}
+	to {
+		background: #FF6062;
+	}
+} 
+h4 { 
+font-size: 40px
+}
+h4 {
+color: aliceblue
+} 
+h4 {
+	font-weight: bold
+}
+p4 {
+center:
+}
+
+p4 {
+	color: black
+}
+p4 {
+	font-weight: bold
+}
+p4 {
+	letter-spacing: 2px
+}
+p4 {
+	float: right
+}
+p4 {
+	font-size: 19px
+}
+p4 { 
+width: 60%
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+p5 {
+	font-size: 22px
+}
+p5 {
+	width:60%
+}
+p5{
+	font-weight: bold
+}
+p5{
+	color: black
+}
