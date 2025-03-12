@@ -5,25 +5,68 @@
 https://www.w3schools.com/cssref/pr_dim_line-height.php
 
 https://stackoverflow.com/questions/1893751/how-to-prevent-line-break-in-a-column-of-a-table-cell-not-a-single-cell
-  -->
+
+looked at a lot of stuff to try to figure out horizontal scrolling and most was unhelpful
+
+-->
 
 <!DOCTYPE html>
 <html>
 <head>
 
     <link rel="stylesheet" href="stylesheets/style1.css">
+    <script>
+        
+        let x = Number(0);
+
+        // LOTTA different sources on this one plus my own logic
+        // https://www.reddit.com/r/webdev/comments/zqr9ss/hi_all_im_trying_to_do_horizontal_scrolling_in/ in the end close to this one
+        // with help from
+        // https://www.w3schools.com/tags/ref_eventattributes.asp
+        // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_wheel_deltay2
+        // https://www.w3schools.com/jsref/event_wheel_deltay.asp
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+         // height of the page
+        // scrollY is 0-x
+        // I want it to be -.5x to .5x, but dont know what x is
+        // if I get the total height of the page, 
+        // i can effectively make a big square and scroll thru it
+        // so 0 scrollY would be a large negtive value, etc
+        function handleScroll(event){
+            event.preventDefault();
+            x += event.deltaY + event.deltaX;
+            scrollTo(x, 0);
+        }
+
+        // // copied from https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event then modified
+        // const element = document.querySelector("body");
+        // // const output = document.querySelector("p#output");
+
+        // element.addEventListener("scroll", (event) => {
+        //     element.scrollTo(0, 0);
+        
+        // // output.textContent = "Scroll event fired!";
+        // // setTimeout(() => {
+        // //     output.textContent = "Waiting on scroll events...";
+        // // }, 1000);
+        // });
+
+
+    </script>
 
 </head>
 
-<body>
+<body >
 
     <table style="top: -100px;">
-    <tr><td><p>IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTAL</p></td></tr>
+    <tr><td><p>IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTALISM BEAUTY IS BRUTAL</p></td></tr>
     </table>
     <table>
     <tr>
             <td><h1 class="B">
-                <div class="B-content">
+                <div class="B-content" onwheel=" handleScroll(event) ">
                     <h2>BRUTALISTIC WEB DESIGN IS A HARD TERM TO PIN DOWN PRECISELY, DUE TO THE SIMILARITY IT SHARES AND OVERLAPS WITH STYLES SUCH AS MINIMALISM AND ANTI-DESIGN, AS WELL AS THE COMPLEX HISTORY OF THE STYLE, BUT IN GENERAL IT IS CHARACTERIZED AS AN IMPOSITION OF AN ETHICAL FRAMEWORK HINGING ON TRANSPARENCY, COMBINED WITH EFFICIENCY, UTILITARIANISM, AND SUBVERSIVENESS. THIS OFTEN COMES OUT AS LARGE FONTS, BOLD COLORS, UNORTHODOX NAVIGATION PATTERNS, MINIMAL OR MAXIMAL DESIGN CHOICES, AND GENERAL CLASHING FEATURES THAT OVERALL MAKE UP A THEME TO SEND A POWERFUL MESSAGE.</h2>
                     <h2>BRUTALISTIC WEB DESIGN IS A HARD TERM TO PIN DOWN PRECISELY, DUE TO THE SIMILARITY IT SHARES AND OVERLAPS WITH STYLES SUCH AS MINIMALISM AND ANTI-DESIGN, AS WELL AS THE COMPLEX HISTORY OF THE STYLE, BUT IN GENERAL IT IS CHARACTERIZED AS AN IMPOSITION OF AN ETHICAL FRAMEWORK HINGING ON TRANSPARENCY, COMBINED WITH EFFICIENCY, UTILITARIANISM, AND SUBVERSIVENESS. THIS OFTEN COMES OUT AS LARGE FONTS, BOLD COLORS, UNORTHODOX NAVIGATION PATTERNS, MINIMAL OR MAXIMAL DESIGN CHOICES, AND GENERAL CLASHING FEATURES THAT OVERALL MAKE UP A THEME TO SEND A POWERFUL MESSAGE.</h2>
                     <h2>BRUTALISTIC WEB DESIGN IS A HARD TERM TO PIN DOWN PRECISELY, DUE TO THE SIMILARITY IT SHARES AND OVERLAPS WITH STYLES SUCH AS MINIMALISM AND ANTI-DESIGN, AS WELL AS THE COMPLEX HISTORY OF THE STYLE, BUT IN GENERAL IT IS CHARACTERIZED AS AN IMPOSITION OF AN ETHICAL FRAMEWORK HINGING ON TRANSPARENCY, COMBINED WITH EFFICIENCY, UTILITARIANISM, AND SUBVERSIVENESS. THIS OFTEN COMES OUT AS LARGE FONTS, BOLD COLORS, UNORTHODOX NAVIGATION PATTERNS, MINIMAL OR MAXIMAL DESIGN CHOICES, AND GENERAL CLASHING FEATURES THAT OVERALL MAKE UP A THEME TO SEND A POWERFUL MESSAGE.</h2>
