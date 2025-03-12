@@ -1,0 +1,104 @@
+:root {
+	/*Defining colors*/
+	--green: #214E34;
+	--purple: #573E7A;
+	--black: #011014;
+	--white: #EEE5E9;
+	
+	/*--logo-div-width: 100%;
+	--logo-img-width: 25vw;*/
+}
+
+@font-face {
+	font-family: "American Typewriter";
+	src: local("American Typewriter"), url("American Typewriter Regular.ttf");
+}
+
+body {
+	background-color: var(--black);
+	font-family: "American Typewriter";
+}
+
+#logo {
+	width: 20vw;
+	margin: auto;
+}
+
+.logo {
+	width: 99vw;
+	display: flex;
+}
+
+.header {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+}
+
+.div_header {
+	width: 99vw;
+	display: flex;
+}
+
+.header li {
+	display: inline;
+}
+
+.header li a {
+	font-size: 3vw;
+	color: var(--purple);
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 15vw;
+	float: left;
+	background-color: var(--white);
+	margin: 1.5vw;
+	
+	border-radius: 10px
+	
+}
+
+.header li a:hover {
+  background-color: #FFFFFF;
+}
+
+#active {
+	background-color: var(--green);
+	color: var(--white);
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 99vw;
+	color: var(--white);
+	margin: auto;
+}
+
+/* menu image on /menu/*/
+.menu {
+	margin: auto;
+	width: 90vw;
+}
+
+.content h1, .content p {
+	margin: auto;
+	margin-top: 5vh;
+	width: 65vw;
+	display: flex;
+	font-family: "American Typewriter";
+	text-align: center;
+}
+
+.content p {
+	font-size: 3.25vh;
+}
+
+.break {
+	display: flex;
+	flex-basis: 100%;
+	width: 99vw;
+	height: 0px;
+	padding: 0px;
+}
