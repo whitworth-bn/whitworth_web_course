@@ -16,6 +16,10 @@ h3 {
     
 }
 
+h3:hover {
+    cursor: pointer;
+}
+
 h2 {
     font-size: 5vh;
     color: black;
