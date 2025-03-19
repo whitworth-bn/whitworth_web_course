@@ -1,0 +1,41 @@
+@charset "UTF-8";
+body {
+ background-image: url("images/70s-retro-perspective-lines-background-vintage-colourful-stripes-banner-backdrop-and-wallpaper-vector.jpg")
+}
+body{ opacity: 95%}
+body {background-size: 3000px}
+body {background-position: center} 
+h1 {
+font-family: "dreamboat", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+h1 {font-size: 100px}
+h1 {text-align: center}   
+h1 {color: #ef5327 } 
+h1 {text-shadow: 4px 9px 0 #bbf1f1 }
+.column {
+  float: left; 
+  width: 48%;
+  padding: 10px;
+  height: 400px; 
+}
+.row:after {
+  content: "";
+  display: table;
+	clear: both;} 
+h2 {
+font-family: "dreamboat", sans-serif;
+font-weight: 800;
+font-style: normal; 
+} 
+h2 { color: #5A3535
+}
+h2 { font-size: 35px}
+body {font-family: "bd-retrocentric", sans-serif;
+font-weight: 600;
+font-style: oblique;}
+body {font-size: 13px}
+h2 {text-shadow: 4px 2px 0 #E2D7A7 
+}
+body { color: #070735}
