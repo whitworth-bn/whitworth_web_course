@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #3988ff;
+    --secondary-color: #ffbf9d;
+    --tertiary-color: #000000;
+    --text-color: #ffd900;
+    --background-color: #000000;
+    --content-window-main-size: 80%;
+}
+
+@font-face {
+    font-family: 'Plank';
+    src: url('../assets/PLANK___.TTF');
+}
+
+@font-face {
+    font-family: 'Excelate';
+    src: url('../assets/excelate.ttf');
+}
+
+body {
+    background: var(--background-color);
+    background-image: url('../images/photo-1578662996442-48f60103fc96.jpg');
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Excelate';
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Excelate';
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Excelate';
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+p {
+
+    color: var(--text-color);
+}
+
+img {
+    height: 100%;
+    width: auto;
+    max-height: 130px;
+    margin: 2%;
+}
+
+.title-text{
+    text-align: center;
+    background-image: linear-gradient(var(--primary-color), #fff, var(--primary-color));
+    color: transparent;
+    text-decoration-color: var(--primary-color);
+    background-clip: text;
+}
+
+
+.big-container{
+    display: flex;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    width: 90%;
+    /* background-color: var(--tertiary-color); */
+    background: linear-gradient(var(--primary-color), var(--tertiary-color) 20%, var(--tertiary-color) 70%, var(--secondary-color));
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), inset 0px 0px 10px #00f;
+    clip-path: polygon(0% 10%, 10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%);
+}
+
+
+.top-container, .bottom-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;      
+}
+
+.list-box{
+    flex-wrap: wrap;
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+    background: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
