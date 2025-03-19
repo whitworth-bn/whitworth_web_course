@@ -1,0 +1,74 @@
+.screen {
+    position: relative;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	top: 100px; 
+	box-shadow: 1px 1px 10px;
+}
+.circle1 {
+	position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  border-radius: 50%;
+	left: 680px;
+	top: 200px; 
+}
+
+.circle2 {
+	position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  border-radius: 50%;
+	margin-left: auto;
+  margin-right: auto;
+	top: 160px; 
+}
+.circle3 {
+	position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  border-radius: 50%;
+	left: 800px;
+	top: 120px; 
+}
+
+.time{
+	position: relative;
+	top: -375px;
+	left:1030px;
+}
+.companies{
+	position: relative;
+	left: 440px;
+	top: -410px;
+	text-decoration: none;
+}
+.designer{
+	position: relative;
+	left: 530px;
+	top: -443px;
+		
+}
+.home{
+	position: relative;
+
+	text-align: center;
+	top: -473px;
+	color:white;	
+		
+}
+.list{
+	position: relative;
+	left: 420px;
+	top: -443px;
+}
+.desc{
+	position: relative;
+	left: 880px;
+	top: -460px;
+}

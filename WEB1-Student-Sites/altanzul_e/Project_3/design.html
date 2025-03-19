@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	 <link rel="stylesheet" href="styledes.css"> 
+	<style>
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+		a{
+			color:black;
+		}
+</style>
+</head>
+
+<body onload="startTime()">
+	<img src="img/screen.png"  alt="x" class="screen">
+	<a href="index.html">
+	<div class="circle1"></div>
+	</a>
+	<a href="index.html">
+	<div class="circle2"></div>
+	</a>
+	<a href="index.html">
+	<div class="circle3"></div>
+	</a>
+	
+	<div class="time" id="time"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i}; 
+  return i;
+}
+</script>
+	<a href="site.html">
+	<p class="companies"> Company</p>
+	</a>
+	<a href="design.html">
+	<p class="designer"> Designer</p>
+	</a>
+	<p class="home"> Designer</p>
+	<ul class="list">
+		<a href="https://vanschneider.com/">
+  <li>Tobias van Schneider</li>
+		</a>
+		<a href="https://timroussilhe.com/">
+  <li>Tim Roussilhe </li>
+		</a>
+		<a href="https://elliotjaystocks.com/">
+  <li>Elliot Jay Stocks</li>
+		</a>
+			<a href="https://www.michael.fm/">
+<li>Micheal Sommer</li>
+		</a>
+				<a href="https://timothyachumba.com/">
+		<li>Timothy Achumba</li>
+		</a>
+</ul>  
+	<p class="desc">Interactive and Spacious</p>
+</body>
+</html>
