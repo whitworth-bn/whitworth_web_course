@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+.parallax {
+    background-image: url('https://25.media.tumblr.com/38a70f54ce3e36a6fae63ab5533ad9c1/tumblr_mfi7d2Nhxy1qlvesxo1_1280.gif');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.whale{
+    background-image: url("whale.jpg");
+}
+
+.crab{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5fcad9a0e504e82ec5986320/1610052726258-F63ZCLRMC14PL2HW0QL1/Annie-Crawley-4415+%282%29.jpg");
+}
+
+.shrimp{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8-5c2zJibLHph-FB18PSCBjI9EiCULKH4g&s");
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.arrow {
+    transform: translate(0%, 300%);
+}
+
+.content {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+a {
+    color: white;
+}
+
+.newcontent{
+    margin-top: 20%;
+    background-color:rgb(84, 82, 110);
+    color: white;
+    padding-left: 38%;
+    padding-right: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* margin-top: 10%; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns them vertically */
+    flex-wrap: wrap; /* Ensures they wrap if there's not enough space */
+    gap: 16px; /* Adds spacing between cards */
+    padding: 2%; /* Adds some spacing around the container */
+    position: relative;
+    z-index: 11; /* Ensures it's above other content */
+}
+  
+
+.cards::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card {
+    flex: 1 1 10%; /* Grow, shrink, and start at 200px width */
+    max-width: 25%; /* Prevents the card from becoming too large */
+    padding: 2%;
+    margin: 3%;
+    background-color: rgba(82, 81, 109, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+

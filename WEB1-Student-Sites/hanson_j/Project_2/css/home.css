@@ -1,0 +1,175 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: Trajanus;
+    src: url(../fonts/TRAJANUS.TTF);
+  }
+
+  @font-face {
+    font-family: Copperplate;
+    src: url(../fonts/Copperplate.otf);
+  }
+
+/* Banner Css*/
+.banner{
+    background-image: url("../img/PatternTestJH.png");
+    height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Logo Css*/
+.logo img{
+    position: absolute;
+    top: 18%;
+    width: 7%;            
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: .5%;
+    background-color: white;
+}
+
+/* Title Css */
+
+.title{
+    display: block;
+    margin-top: 5% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1%;
+    text-align: center;
+    font-family: Copperplate;
+}
+
+/* Menu Css */
+.menu{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline-block;
+    font-size: 16pt;
+    padding: 1%;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(157, 104, 64);
+    font-family: Copperplate;
+}
+
+li a:hover{
+    color: black;
+}
+
+/*Dropdown*/
+.dropdown{
+    display: inline-block;
+}
+
+.droptent{
+    display: none;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+    min-width: 5%;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.droptent ul{
+    text-align: left;
+    padding: 10px;
+    display: block;
+}
+
+.droptent ul li{
+    display: block;
+}
+
+.droptent ul li a{
+    font-size: 12pt;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    padding-top: 10%;
+}
+
+.dropdown:hover .droptent {
+    display: block;
+}
+
+/* Slideshow */
+.thumb{
+    height: 15vh;
+    padding:.5vh;
+}
+
+#display{
+    height: 50vh;
+}
+
+#slideshow{
+    position: absolute;
+    top: 50%;            
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+#slideshow picture{
+    display: block;
+    width: 60%;
+    height: 30%;
+}
+
+#display2{
+    margin: 0 auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Gallery */
+
+.gallery{
+    position: absolute;
+    top: 50%;            
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+
+.gallery table tr td img{
+    display: block;
+    margin: 4vw;
+    width: 20vw;
+    height: 20vw;
+}
+
+
+.gallery table tr td picture{
+    display: block;
+    margin: 4vw;
+    width: 20vw;
+    height: 20vw;
+}
+
+.gallery table tr td picture img{
+    margin: 0 auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+p{
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2%;
+    text-align: center;
+    font-family: Copperplate;
+}

@@ -1,0 +1,88 @@
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+p, h1, h2 {
+    font-family: Impact;
+    line-height: 0px;
+    
+}
+
+h3 {
+    font-family: Impact;
+    font-size: 33vh;
+    color: rgb(191, 23, 23);
+    
+}
+
+h3:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 5vh;
+    color: black;
+    line-height: 20vh;
+
+}
+
+
+
+p {
+    font-size: 2.8vh;
+    color: rgb(191, 23, 23);
+}
+
+p.normalTextWrap {
+    line-height: normal;
+    word-wrap: break-word; 
+
+    white-space: normal;
+}
+
+h1 {
+    font-size: 65vh;
+    color: rgb(191, 23, 23);
+}
+
+body {
+    background-color: black;
+}
+
+table {
+    white-space: nowrap;
+}
+
+.B-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(191, 23, 23);
+    /* width: 100vw; */
+    /* height: 200vh; */
+    top: 7vh;
+    left: 0vw;
+
+}
+
+.U-content, .R-content, .A-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 150vh;
+    top: 7vh;
+    left: 0vw;
+
+}
+
+.R-content {
+    background-color: rgb(255, 255, 255);
+}
+
+.A-content {
+    background-color: #E6552B;
+}
+
+.B:hover .B-content, .R:hover .R-content, .U:hover .U-content, .A:hover .A-content { display: block; }
+

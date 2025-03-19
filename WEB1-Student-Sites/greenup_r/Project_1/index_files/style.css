@@ -1,0 +1,55 @@
+body {
+	font-size: 1.25vw;
+}
+
+.navigation {
+	float: right;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+th, td {
+	width: 11.45vw;
+}
+
+.search_option {
+	border: 1px solid black;
+	padding: 5px;
+	display: flex;
+	float: left;
+	width: 11.3vw;
+	height: 3vw;
+	align-items: center;
+}
+
+.add_name_option {
+	border: 1px solid black;
+	padding: 5px;
+	display: flex;
+	float: left;
+	width: 11.3vw;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 11vh;
+}
+
+.add_name_label {
+	height: 8vh;
+	display: flex;
+	flex-basis: 100%;
+}
+
+.add_name_input {
+	display: flex;
+	flex-basis: 100%;
+	width: calc(11.2vw - 10px);
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}

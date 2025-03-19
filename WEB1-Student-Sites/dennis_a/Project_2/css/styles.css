@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* For dropdown positioning */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #007C89;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+nav ul li ul li a:hover {
+    background-color: #007C89;
+}
+
+/* Main Content Styles */
+main {
+    margin: 50px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.img-default {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hero-img {
+    width: 60%;
+}
+
+/* Responsive Font Size */
+@media screen and (max-width: 560px) {
+    nav ul li a {
+        font-size: 13px;
+    }
+}

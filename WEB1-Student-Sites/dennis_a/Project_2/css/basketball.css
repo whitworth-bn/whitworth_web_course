@@ -1,0 +1,11 @@
+.basketball-spin-gif{
+    width: 80px;
+}
+.basketball-spin-h1{
+    width: auto;
+}
+.basketball-spin-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
