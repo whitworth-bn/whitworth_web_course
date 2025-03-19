@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #171A1B;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #868F92;
+}
+
+header {
+    background: #0E1011;
+    color: #B0BEC5;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #727C81;
+    text-decoration: none;
+}
+
+a:link {
+    color: grey;
+
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: white;
+
+}
