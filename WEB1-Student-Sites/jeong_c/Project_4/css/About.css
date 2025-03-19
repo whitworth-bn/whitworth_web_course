@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+	background-image: url("../img/Trippy-Hallucination-BW.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+	text-align: center;
+	color: white; 
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 10px; 
+	text-shadow: 5px 5px red;
+}
+
+p {
+	position: absolute;
+	margin: 100px; 
+	text-shadow: 4px 3px blue;
+	margin-bottom: 20px; 
+	font-size: 25px;
+	color: aliceblue;
+	text-decoration: line-through;
+	text-decoration-color: black;
+}
+
+.AlienDancing {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
