@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Using code and tutorial from "https://youtu.be/rLrLJQBG_qo?si=1WNVmgcgAsbXJCBx"-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Effect</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="parallax-wrapper">
+		<div class="parallax-group first-screen" id="first">
+			FIELD
+		</div>
+		
+		<div class="parallax-group" id="group-1">
+			<div class="parallax-layer back-layer"> LAKE </div>
+			<div class="parallax-layer mid-layer"> </div>
+			<div class="parallax-layer top-layer"> <img src="images/rain.png" alt="rain"></div>
+		</div>
+		<div class="parallax-group" id="group-2">
+			<div class="parallax-layer mid-layer"> MUSHROOM </div>
+			<div class="parallax-layer top-layer"> <img src="images/rain.png" alt="rain"></div>
+		</div>
+		
+		<div class="parallax-group last-screen" id="last"> FLOWER</div>
+		
+		<div class="description" id="par"> A parallax effect is a way of positioning elements in order to make the foreground move faster than the background, with all sorts of different speed elements in the middle. </div>
+		</div>
+</body>
+</html>

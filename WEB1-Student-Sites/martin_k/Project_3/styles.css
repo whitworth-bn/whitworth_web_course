@@ -1,0 +1,92 @@
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Helvetica;
+  font-size: 4em;
+  color: white; }
+  body .parallax-wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    /*#group-1 > .mid-layer{
+    	background-color:aquamarine;
+    }*/ }
+    body .parallax-wrapper .first-screen {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("images/fourkay.jpg");
+      background-size: cover;
+      background-position: center; }
+    body .parallax-wrapper .last-screen {
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body .parallax-wrapper .parallax-group {
+      position: relative;
+      height: 100vh;
+      transform-style: preserve-3d; }
+      body .parallax-wrapper .parallax-group .parallax-layer {
+        position: absolute;
+        inset: 0;
+        /* Like "Margin" includes all 4 margins, "inset" includes top, right, bottom, left*/ }
+      body .parallax-wrapper .parallax-group .back-layer {
+        transform: translateZ(-300px) scale(1.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: fill; }
+      body .parallax-wrapper .parallax-group .mid-layer {
+        transform: translateZ(-500px) scale(5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        /* Full height of the viewport */
+        background-color: black; }
+      body .parallax-wrapper .parallax-group .top-layer {
+        transform: translateZ(210px) scale(0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    body .parallax-wrapper #group-1 {
+      z-index: -1; }
+    body .parallax-wrapper #group-1 > .back-layer {
+      background-image: url("images/lake.jpg");
+      background-size: cover;
+      background-position: center; }
+    body .parallax-wrapper #group-2 > .mid-layer {
+      transform: translateZ(-500px) scale(2);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("images/shrooms.jpg");
+      background-size: cover;
+      background-position: center; }
+    body .parallax-wrapper #last {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("images/leaves.jpg");
+      background-size: cover;
+      background-position: center; }
+    body .parallax-wrapper #par {
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
