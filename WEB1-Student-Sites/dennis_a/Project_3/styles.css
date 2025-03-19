@@ -1,0 +1,30 @@
+body {
+    background-image: url('/paper-background.png'); /* Adjust file extension if needed */
+    background-size: cover; /* Covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    height: 100%; /* Full height */
+    margin: 0; /* Removes default margin */
+}
+a, p, h1, h2{
+    color: rgb(95, 95, 80);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vw;
+    border: 10px solid rgba(41, 40, 40, 0.375);
+    margin: 20px 20px;
+}
+h2{
+    font-size: 3vw; 
+}
+.container{
+    background-image: url('paper-background-container.png');
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    max-width: 500px;
+}
+
