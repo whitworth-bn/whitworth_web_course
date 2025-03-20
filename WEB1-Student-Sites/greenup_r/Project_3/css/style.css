@@ -132,7 +132,7 @@ h1 {
 .color_input {
 	display: flex;
 	margin: auto;
-	margin-top: -6vh;
+	margin-top: -10vh;
 	padding-top: 0;
 	font-size: var(--md-sys-typescale-display-medium-size);
 }
