@@ -1,9 +1,62 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="module" src="/whitworth_web_course/WEB1-Student-Sites/greenup_r/Project_3/js/index.js"></script>
+		<link rel="stylesheet" href="/css/style.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+		
+		<script type="importmap">
+			{
+				"imports": {
+					"@material/web/": "https://esm.run/@material/web/",
+					"@material/material-color-utilities/": "https://esm.run/@material/material-color-utilities/"
+				}
+			}
+			
+  		</script>
+		<script type="module">
+    		import '@material/web/all.js';
+			//this goes into importmap: "@material/material-color-utilities/": "https://esm.run/@material/material-color-utilities/"
+			import '@material/material-color-utilities/index.js';
+		</script>
+		
+		<script defer src="/js/color_stuff/color_stuff_bundle.js"></script>
+		<script defer src="/js/index.js"></script>
 	</head>
 	<body>
-		
+		<header>
+			<h1>Hello Material!</h1>
+			<md-filled-icon-button class="palette" id="palette"><md-icon>palette</md-icon></md-filled-icon-button>
+		</header>
+		<div class="content">
+			<div class="p">
+				<p>According to <a href='https://m3.material.io/'>Material.io</a> (The official website for Material Design), "Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material Design streamlines collaboration between designers and developers, and helps teams quickly build beautiful products."</p>
+			</div>
+			<div class="p">
+				<p>Built by Google, Material Design focuses on a clean, simplified look that prioritizes accessability and useability. Corners are often rounded, with high contrast but soft colors. :hover actions are common and clear, without being obtrusive. Icons are often used, with distinct meanings.</p>
+			</div>
+			<div class="p">
+				<p>Some websites/companies that use Material Design include:</p>
+				<ul>
+					<li><a href="google.com">Google</a></li>
+					<li><a href="spotify.com">Spotify</a></li>
+					<li><a href="discord.com">Discord</a></li>
+					<li><a href="duolingo.com">Duolingo</a></li>
+					<li><a href="msteams://teams.microsoft.com">Microsoft Teams</a></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<div id="color_input_shadow"></div>
+		<div id="color_input_div">
+			<div class="close_color_input">
+				<md-filled-icon-button id="close_color_input"><md-icon>close</md-icon></md-filled-icon-button>
+			</div>
+			<div class="color_input">
+				<p>Theme Color: </p>
+				<input id="color-input" type="color" value="#84e8af" onchange="change_color()">
+			</div>	
+		</div>
 	</body>
 </html>
