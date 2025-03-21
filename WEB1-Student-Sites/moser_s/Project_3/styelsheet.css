@@ -1,0 +1,99 @@
+/* Minimalist Design Stylesheet */
+
+/* Root Variables for Consistency */
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #ffffff;
+    --accent-color: #666;
+    --font-family: 'Inter', sans-serif;
+    --max-width: 900px;
+}
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    line-height: 1.7;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Content Wrapper */
+.content {
+    max-width: var(--max-width);
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    font-size: 0.9em;
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+}
