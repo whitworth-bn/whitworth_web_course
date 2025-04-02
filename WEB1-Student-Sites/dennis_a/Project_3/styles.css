@@ -1,16 +1,10 @@
     body {
-        background-image: url('/paper-background.png');
-        /* Adjust file extension if needed */
+        background-image: url('paper-background.png');
         background-size: cover;
-        /* Covers the entire viewport */
         background-position: center;
-        /* Centers the background image */
         background-repeat: no-repeat;
-        /* Prevents repeating */
         height: 100%;
-        /* Full height */
         margin: 0;
-        /* Removes default margin */
     }
 
     a,
