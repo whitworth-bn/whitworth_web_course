@@ -1,30 +1,105 @@
-body {
-    background-image: url('/paper-background.png'); /* Adjust file extension if needed */
-    background-size: cover; /* Covers the entire viewport */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents repeating */
-    height: 100%; /* Full height */
-    margin: 0; /* Removes default margin */
-}
-a, p, h1, h2{
-    color: rgb(95, 95, 80);
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 10vw;
-    border: 10px solid rgba(41, 40, 40, 0.375);
-    margin: 20px 20px;
-}
-h2{
-    font-size: 3vw; 
-}
-.container{
-    background-image: url('paper-background-container.png');
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    max-width: 500px;
-}
+    body {
+        background-image: url('/paper-background.png');
+        /* Adjust file extension if needed */
+        background-size: cover;
+        /* Covers the entire viewport */
+        background-position: center;
+        /* Centers the background image */
+        background-repeat: no-repeat;
+        /* Prevents repeating */
+        height: 100%;
+        /* Full height */
+        margin: 0;
+        /* Removes default margin */
+    }
 
+    a,
+    li,
+    p,
+    h1,
+    h2,
+    h3 {
+        color: rgb(95, 95, 80);
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 10vw;
+        border: 10px solid rgba(41, 40, 40, 0.375);
+        margin: 20px 20px;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    .container{
+        display: flex;
+        margin: 50px auto;
+        width: 70vw;
+        background-image: url('paper-background-container.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .bomb {
+        height: 600px;
+        align-self: center;
+        padding-right: 20px;
+        mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    }
+    
+    .bomb-section h3 {
+        font-size: 2vw;
+    }
+    section{
+        display: flex;
+        flex-direction: column;        
+    }
+    .bomb-section {
+
+        width: 50%;
+        max-height: 1000px;
+        overflow: auto; /* Ensures scrolling if content overflows */
+    }    
+    p{
+        font-size: 1.5vw;
+        padding: 0 30px;
+    }
+    .second-bomb {
+        align-items: center;
+        justify-content: center;
+    }
+    .computer-section{
+        width: 50%;
+    }
+    .comp-img{
+        width: 30vw;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    .comp-text{
+        text-align: right;
+        width: 100%;
+    }
+    .retro-description-section-container section{
+        margin-top: 200px;
+        padding: 50px;
+    }
+    .title-retro-web-container{
+        background-image: url('/paper-background-border.png');
+    }
+    ul{
+        list-style: none;
+    }
+    .telephone{
+        width: 50vw;
+        align-self: flex-end;
+        position: absolute;
+        margin-top: -300px;
+        margin-right: -170px;
+    }
