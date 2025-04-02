@@ -1,5 +1,6 @@
     body {
         background-image: url('paper-background.png');
+        background-color: tan;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
