@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full Width Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(53, 53, 53);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img.full-width {
+            width: 70%;
+            height: auto;
+            display: block;
+            /* removes whitespace under the image */
+        }
+        h1{
+            text-align: center;
+            background-color: rgb(53, 53, 53);
+            color: aliceblue;
+            padding: 50px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> New Site</h1>
+    <img src="mockup.png" alt="Full width image" class="full-width">
+    <h1> Old Site</h1>
+    <img src="old-site.jpg" alt="Full width image" class="full-width">
+
+</body>
+
+</html>
