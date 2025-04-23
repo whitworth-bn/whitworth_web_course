@@ -1,0 +1,48 @@
+.personal-branding h1{
+	background-color: black;
+	color: white;
+}
+
+    .thumbnail {
+      width: 20vw;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+	.thumbnail a{
+	padding-right: 30px;
+	}
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .overlay:target {
+      display: flex;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 80px;
+		font-weight: 900;
+      text-decoration: none;
+    }
+
+	
