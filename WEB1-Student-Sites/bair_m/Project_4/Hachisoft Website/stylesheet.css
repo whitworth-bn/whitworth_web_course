@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+/*background*/
+body{background-color: #E3ECFF}
+div.logo img{
+	width:200px;
+	margin-top:30px;
+	margin-bottom: -10px;
+}
+
+/*paragraph*/
+p{
+	align-content: center;
+	display:inline-block;
+	vertical-align:50px;
+	font-family:"Goodlife Sans Condensed";
+	font-size:22px;
+	margin-left:100px;
+	margin-right:100px;
+	margin-top:100px;
+	margin-botom:10px;
+}
+
+/*Name*/
+h1{align-content: center;
+	display:inline-block;
+	vertical-align: 100px;
+	font-family:"Goodlife Sans Condensed";
+	font-size:60px;
+	margin-left: 40px;
+}
+
+
+/*Sections*/
+div.section{
+}
+h2{
+	color:black;
+	display: block;
+	margin-top:50px;
+	margin-bottom: -60px;
+	align-content: center;
+	font-family:"Goodlife Sans Condensed";
+	font-size:40px;
+	color:#3D358B;
+	text-align: center;
+	background-color:#AFC2E4;
+}
+div.section ul:link, ul:visited {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	font-family:"Goodlife Sans Condensed";
+	font-size:25px;
+	font-size-adjust: auto;
+}
+div.section a:hover, a:active {
+  background-color:#6495ED;
+	color:white;
+	font-family:"Goodlife Sans Condensed";
+	font-size: 30px;
+	border-radius:5px;
+}
+
+
+
+/*Gallery*/
+div.gallerycontainer{
+	display:flex;
+	flex-wrap: wrap;
+	gap:4vw;
+	justify-content: center;
+	vertical-align: middle;
+}	
+div.gallery {
+  align-content: center;
+  width:250px;
+	height: 125px;
+	padding-bottom: 10px;
+	padding-top: 100px;
+	border-radius:25px;
+}
+div.gallery img {
+  width: 100%;
+  height:auto;
+	vertical-align:baseline;
+	border-radius:25px;
+}
+div.desc {
+  padding:1px;
+  text-align: center;
+}
+
+
+/*link buttons*/
+div.desc a:link, a:visited {
+  background-color: #AFC2E4;
+  color: #3D358B;
+  padding: 10px;
+	border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	font-family:"Goodlife Sans Condensed";
+	font-size:25px;
+	font-size-adjust: auto;
+}
+div.desc a:hover, a:active {
+  background-color:#3D358B;
+	color:white;
+	font-family:"Goodlife Sans Condensed";
+	font-size: 30px;
+	border-radius:5px;
+}
+
+/*Portfolio Links*/
+div.links ul:link, ul:visited {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	font-family:"Goodlife Sans Condensed";
+	font-size:25px;
+	font-size-adjust: auto;
+}
+div.desc a:hover, a:active {
+  background-color:#3D358B;
+	color:white;
+	font-family:"Goodlife Sans Condensed";
+	font-size: 30px;
+	border-radius:5px;
+}
