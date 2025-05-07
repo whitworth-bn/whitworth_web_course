@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<!-- 
+Sources (some unused, from work in trying to get hover to work):
+ - https://base64.guru/converter/encode/image
+ - https://sentry.io/answers/how-do-i-auto-resize-an-image-to-fit-a-div-container/
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/display
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+ - https://stackoverflow.com/questions/29623028/hover-not-working-is-this-due-to-flex-properties
+ - https://teamtreehouse.com/community/css-flexbox-cant-pull-first-item-to-the-left
+ - https://forum.freecodecamp.org/t/buttons-wont-do-hover-effect-on-css-flexbox/318580/4
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis
+        for: flex box ratios
+ - https://www.w3schools.com/html/html_classes.asp
+        for: classes
+ - https://www.w3schools.com/css/css_table_align.asp
+ - https://stackoverflow.com/questions/799944/why-is-the-table-border-not-showing-in-this-html-table
+        for: needed to be solid
+-->
+
+<head>
+
+    <title>Musescore Website Redesign</title>
+    
+    <!-- doing css here to make it one file -->
+    <!-- CSS -->
+    <style>
+
+        body {
+            background-color: rgb(179, 169, 154);
+        }
+
+        p {
+            
+        }
+
+        table {
+            border: 2px solid black;
+            padding: 0px;
+            
+        }
+
+        tr {
+            border: 2px solid black;
+            padding: 0px;
+        }
+
+        td {
+            border: 2px solid black;
+            vertical-align: bottom;
+            padding: 0px;
+            height: 1vh;
+        }
+
+        .slide-box {
+            display: flex;
+            align-items: stretch;
+            /* flex-flow: wrap row; */
+            flex: 1 1 auto;
+        }
+
+        /* image is contained in a div that grows larger on hover */
+        .img-box {
+            height: 400px; 
+            width: 49vw;
+        }
+
+        /* originally was gonna have the images grow when hovered, but it wasn't working how I wanted.
+           I figured the time would be better spent trying to achive something similar in my portfolio,
+           so I am doing that instead */
+        /* .img-box:hover {
+            height: 90vh;
+            width: 95vw;
+            display: inherit;
+        } */
+
+        /* image is scaled by width, with heigh keeping proportional */
+        .main_img {
+            height: 100%;
+            display: inherit;
+        }
+
+    </style>
+    
+    <!-- JS -->
+    <script>
+
+        // QUESTION: is there like, a non-universal way to do this?
+        pIndex = 0; // sets a "pageIndex" for the "slideshow" to use
+
+        function displayMocks(){
+            
+            // gets all mockup image div containers
+            allMocks = document.getElementsByClassName("slide-box");
+            // hides all mockup div elements by defualt
+            for (i = 0; i < allMocks.length; i++){
+                allMocks[i].style.display = "none";
+            }
+
+            // if statements to check that index doesn't go out of bounds
+            if (pIndex < 0) {
+                pIndex = 0;
+            }
+            if (pIndex >= allMocks.length) {
+                pIndex = allMocks.length-1;
+            }
+            
+            // displays current page based on passed variable
+            allMocks[pIndex].style = "display: flex;" // (see above comment)" align-items: stretch; flex: 1 1 auto;";
+
+        }
+
+        function turnPageLeft(){
+            pIndex--; // decreases page
+            displayMocks(); // refreshes display
+        }
+
+        function turnPageRight(){
+            pIndex++; // increases page
+            displayMocks(); // refreshes display
+        }
+
+
+
+    </script>
+
+</head>
+<body onload="displayMocks()">
+
+    <h1>Musescore Redesign</h1>
+    <!-- table to make logo and name on one line -->
+    <table>
+        <tr>
+            <td><img src="./imgs/Mockup-1.png" style="width: 10vw;"></td>
+            <td ><p>By Eli Chapman c 2025</p></td>
+        </tr>
+        <tr>
+            <!-- empty cell to align text with above -->
+            <td></td>
+            <td><p>Click the text t<br>o change what is shown.</p></td>
+        </tr>
+    </table>
+    
+    
+    <!-- originally I was going to have everything (even images) in one file, but while possible 
+         it ended up being cumbersome for no reason so I decided to just have the images loaded as well -->
+    <div class="slide-box">
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Mockup-1.png">
+        </div>
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Slide1.png">
+        </div>
+    </div>
+    <div class="slide-box">
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Mockup-2.png">
+        </div>
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Slide2.png">
+        </div>
+    </div>
+    <div class="slide-box">
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Mockup-3.png">
+        </div>
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Slide3.png">
+        </div>
+    </div>
+    <div class="slide-box">
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Mockup-4.png">
+        </div>
+        <div class="img-box">
+            <img class="main_img" src="./imgs/Slide4.png">
+        </div>
+    </div>
+        
+    <!-- table to make controls on one line -->
+    <table style="width: 98vw;">
+        <tr>
+            <td style="float: left;">
+                <h1 onclick="turnPageLeft()"> LEFT </h1>
+            </td>
+            <td style="float: right;">
+                <h1 onclick="turnPageRight()"> RIGHT </h1>
+            </td>
+        </tr>
+    </table>
+
+</body>
