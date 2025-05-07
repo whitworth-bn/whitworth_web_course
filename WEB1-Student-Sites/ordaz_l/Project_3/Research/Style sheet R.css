@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+h1 {
+  color: #9FAF84;
+}
+h1 {text-align: center;}
+h2 {
+  color: #9FAF84;
+}
+h3 {
+  color: #9FAF84;
+}
+h2 {text-align: center;}
+h3 {text-align: center;}
+
+a:link {
+  color: #9FAF84;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7E9B4E;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  #BBCF9A;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #BBCF9A;
+  background-color: transparent;
+  text-decoration: underline;
+}
