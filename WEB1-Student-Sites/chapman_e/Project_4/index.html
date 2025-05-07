@@ -16,6 +16,13 @@ Sources (some unused, from work in trying to get hover to work):
  - https://www.w3schools.com/css/css_table_align.asp
  - https://stackoverflow.com/questions/799944/why-is-the-table-border-not-showing-in-this-html-table
         for: needed to be solid
+
+
+        -https://www.geeksforgeeks.org/how-to-force-image-resize-and-keep-aspect-ratio-in-html/
+        https://stackoverflow.com/questions/5943166/vertical-alignment-of-text-in-a-table-cell - line hignt
+        https://www.w3schools.com/html/html_table_colspan_rowspan.asp
+
+        http://shouldiusetablesforlayout.com/
 -->
 
 <head>
@@ -28,28 +35,33 @@ Sources (some unused, from work in trying to get hover to work):
 
         body {
             background-color: rgb(179, 169, 154);
+            padding: 0px;
+            border: 0px;
         }
 
         p {
-            
+            line-height: 3px;
         }
 
         table {
-            border: 2px solid black;
+            /* border: 2px solid black; */
             padding: 0px;
+
             
         }
 
         tr {
-            border: 2px solid black;
-            padding: 0px;
+            /* border: 2px solid black; */
+            /* padding: 0px; */
+
         }
 
         td {
-            border: 2px solid black;
-            vertical-align: bottom;
+            /* border: 1px solid black; */
+            /* vertical-align: bottom;
             padding: 0px;
             height: 1vh;
+            line-height: 0%; */
         }
 
         .slide-box {
@@ -57,11 +69,12 @@ Sources (some unused, from work in trying to get hover to work):
             align-items: stretch;
             /* flex-flow: wrap row; */
             flex: 1 1 auto;
+            
         }
 
         /* image is contained in a div that grows larger on hover */
         .img-box {
-            height: 400px; 
+            /* height: 60vh;  */
             width: 49vw;
         }
 
@@ -76,7 +89,8 @@ Sources (some unused, from work in trying to get hover to work):
 
         /* image is scaled by width, with heigh keeping proportional */
         .main_img {
-            height: 100%;
+            max-height: 98%;
+            max-width: 98%;
             display: inherit;
         }
 
@@ -125,21 +139,27 @@ Sources (some unused, from work in trying to get hover to work):
     </script>
 
 </head>
-<body onload="displayMocks()">
+<body onload="displayMocks()" style="padding: 0px; border: 0px;">
 
     <h1>Musescore Redesign</h1>
     <!-- table to make logo and name on one line -->
+    
+    
+    
+    <!-- <img src="./imgs/Logo.png" style="width: 5vw;"> -->
+    
     <table>
         <tr>
-            <td><img src="./imgs/Mockup-1.png" style="width: 10vw;"></td>
-            <td ><p>By Eli Chapman c 2025</p></td>
-        </tr>
-        <tr>
-            <!-- empty cell to align text with above -->
-            <td></td>
-            <td><p>Click the text t<br>o change what is shown.</p></td>
+            <td rowspan="2"><img src="./imgs/Logo.png" style="width: 5vw;"></td>
+            <td>
+                <div>
+                    <p>By Eli Chapman c 2025</p>
+                    <p>Click the text to change what is shown.</p>
+                </div>
+            </td>
         </tr>
     </table>
+    <!-- fixed by using less tables -->
     
     
     <!-- originally I was going to have everything (even images) in one file, but while possible 
