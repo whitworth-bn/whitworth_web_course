@@ -1,0 +1,126 @@
+:root {
+	/*Defining colors*/
+	--green: #214E34;
+	--purple: #573E7A;
+	--black: #011014;
+	--white: #EEE5E9;
+	
+	/*--logo-div-width: 100%;
+	--logo-img-width: 25vw;*/
+}
+
+@font-face {
+	font-family: "American Typewriter";
+	src: local("American Typewriter"), url("American Typewriter Regular.ttf");
+}
+
+body {
+	margin: 0;
+	background-color: var(--black);
+	font-family: "American Typewriter";
+	
+	background: url(../img/Sunset.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.header {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+}
+
+.div_header {
+	width: 99vw;
+	display: flex;
+}
+
+.header li {
+	display: inline;
+	font-size: 3vw;
+	color: var(--purple);
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 15vw;
+	float: left;
+	background-color: var(--white);
+	margin: 1.5vw;
+	
+	border-radius: 10px
+}
+
+li a{
+	
+	
+}
+
+li :hover {
+ 	background-color: #FFFFFF;
+}
+
+.header li ul {
+	display: none;
+	position: absolute; 
+	top: 1em;
+	left: 0;
+}
+
+li:hover ul { 
+	display: block; 
+}
+
+li > ul {
+	top: auto;
+	left: auto;
+}
+
+#active {
+	background-color: var(--green);
+	color: var(--white);
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 99vw;
+	color: var(--white);
+	margin: auto;
+	background-color: var(--black);
+	border-radius: 5vh;
+	opacity: .85;
+}
+
+/* menu image on /menu/*/
+.menu {
+	margin: auto;
+	width: 90vw;
+}
+
+.content h1, .content p {
+	margin: auto;
+	margin-top: 5vh;
+	width: 65vw;
+	display: flex;
+	font-family: "American Typewriter";
+	text-align: center;
+}
+
+.content p {
+	font-size: 3.25vh;
+}
+
+.break {
+	display: flex;
+	flex-basis: 100%;
+	width: 99vw;
+	height: 0px;
+	padding: 0px;
+}
+
+.spacer {
+	display: flex;
+	flex-basis: 100%;
+	width: 99vw;
+	height: 15vh;
+	padding: 0px;
+}
