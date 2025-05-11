@@ -58,7 +58,7 @@ body {
     align-items: center;
 } /* still havent figured out how to take full width, centering seems to work ok? */
 
-.gallery-flex-wrapper{
+.gallery-flex-wrapper {
     display: flex;
     flex-flow: nowrap row;
     align-items: left;
@@ -67,7 +67,7 @@ body {
     justify-content: space-between;
 }
 
-.gallery-flex-container{
+.gallery-flex-wrapper .gallery-flex-container {
     display: flex;
     flex-flow: wrap column;
     align-items: center;
@@ -77,6 +77,10 @@ body {
     /* items base percentage width on thier parent */
 } 
 
+.gallery-flex-wrapper .gallery-flex-container-alt{
+    width: auto;
+} 
+
 /* gim1 is a flex box to evenly space its children and add padding*/
 .gimBox-s1{
     width: 98%;
@@ -84,12 +88,36 @@ body {
     display: flex;
     padding-bottom: 1.5%;
 
-
 }
+
+
 
 .gimBox-s2{
     width: 98%;
 }
+
+.gimBox-s2 .gal-img{
+    width: 100%;
+}
+
+/* broken and sad */
+/* .gimBox-s2 .gal-img-novel{
+    width: 200%;
+}
+
+.gimBox-s2 .gal-spacer{
+    display: block;
+    width: 200px;
+    height: auto;
+    background-color: brown;
+    width: 100%;
+}
+
+.gimBox-s2 .gal-spacer-active{
+    /* display: inline; 
+    background-color: brown; 
+    width: 100%;
+} */
 
 /* navbar and children */
 ul.bottom-navbar {
