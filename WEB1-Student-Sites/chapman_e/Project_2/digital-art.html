@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="stylesheets/style1.css">
     <link rel="icon" href="images/Logo.png"> <!--favicon-->
 
+    <script>
+        // function artPopup(){
+        //     // let topWrap = document.getElementById("egg");
+        //     // topWrap.classList.toggle("gallery-flex-container-alt");
+        //     // let pic = document.getElementById("egg2");
+        //     // pic.classList.toggle("full");
+            
+        //     // let greg = document.getElementsByClassName("gal-img");
+        //     // for (i = 0; i < greg.length; i++){
+        //     //     greg[i].classList.toggle("" , false); // force toggles to minimized
+
+        //     // }
+            
+        //     let galBox = document.getElementById("egg2");
+        //     galBox.classList.toggle("gal-img-novel");
+        //     let spacerrrr = document.getElementById("egg23");
+        //     spacerrrr.classList.toggle("gal-spacer-active");
+            
+        // }
+// bronken
+
+
+
+
+
+    </script>
+
 </head>
 
 <body>
@@ -21,21 +48,22 @@
     <!-- gimBox-s2 (or s1; 2 is normal, 1 is half-size) determines the size of the image -->
     <!-- using a flex container b/c I'm basically creating a funky table; so it can have auto sized columns and adaptability -->
     <div class="gallery-flex-wrapper">
-        <div class="gallery-flex-container"> <!--main content is placed in a flex container for easy centering/spacing-->
+        <div class="gallery-flex-container" id="egg"> <!--main content is placed in a flex container for easy centering/spacing-->
             
             <!-- images can be stacked -->
             
             <!-- opening eye pt.1 -->
             <div class="gimBox-s2">
-                <img src="images/porfolio-art/digital/opening-eye-1.png" style="width: 100%;">
+                <img src="images/porfolio-art/digital/opening-eye-1.png" class="gal-img" id="egg2" onclick="artPopup()">
+                <!-- <p class="poppy">Here's Some text</p> -->
             </div>
             <!-- override vent -->
             <div class="gimBox-s2">
-                <img src="images/porfolio-art/digital/override.png" style="width: 100%;">
+                <img src="images/porfolio-art/digital/override.png" class="gal-img" style="width: 100%;">
             </div>
             <!-- arend sticker -->
             <div class="gimBox-s2">
-                <img src="images/porfolio-art/digital/arend-sticker-wip.png" style="width: 100%;">
+                <img src="images/porfolio-art/digital/arend-sticker-wip.png" class="gal-img" style="width: 100%;">
             </div>
 
         </div>
@@ -44,7 +72,8 @@
             
             <!-- opening eye pt.2 -->
             <div class="gimBox-s2">
-                <img src="images/porfolio-art/digital/opening-eye-2.png" style="width: 100%;">
+                <div class="gal-spacer" id="egg23"></div>
+                <!-- <img src="images/porfolio-art/digital/opening-eye-2.png" class="gal-spacer-active" id="egg23" style="width: 100%;"> -->
             </div>
             <!-- dorothy in wonderland poster -->
             <div class="gimBox-s2">
