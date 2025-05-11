@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Illustrations - Dreamweaver</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: #000;
+      font-family: 'UnifrakturCook', cursive;
+    }
+
+    header {
+      text-align: center;
+      font-size: 5rem;
+      color: #d6c7a3;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      width: 100%;
+      text-align: center;
+      background-color: rgba(74, 59, 49, 0.9);
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #a89375;
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin: 0 2rem;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .illustrations-container {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .placeholder-container {
+      text-align: center;
+      position: relative; /* For text positioning above the image */
+    }
+
+    .placeholder {
+      width: 500px;
+      height: 500px;
+      background-color: #888;
+      border: 2px solid #d6c7a3;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .placeholder-text {
+      color: #d6c7a3;
+      font-size: 3rem;
+      font-family: 'UnifrakturCook', cursive;
+      position: absolute;
+      top: -2.5rem; /* Move the label above the image */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .variations-label {
+      width: 100%;
+      text-align: center;
+      color: #d6c7a3;
+      font-size: 4rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>Dreamweaver</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="illustrations.html">Illustrations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- First row of placeholders, replaced with images -->
+  <div class="illustrations-container">
+    <div class="placeholder-container">
+      <img src="pureDreamweaver.png" alt="Pure Dreamweaver" class="placeholder">
+    </div>
+    <div class="placeholder-container">
+      <img src="corruptedDreamweaver.png" alt="Corrupted Dreamweaver" class="placeholder">
+    </div>
+  </div>
+
+  <!-- "Variations" label -->
+  <div class="variations-label">Variations</div>
+
+  <!-- Second row of placeholders with new images -->
+  <div class="illustrations-container">
+    <div class="placeholder-container">
+      <img src="var1.png" alt="Variation 1" class="placeholder">
+    </div>
+    <div class="placeholder-container">
+      <img src="var2.png" alt="Variation 2" class="placeholder">
+    </div>
+  </div>
+
+  <!-- Third row of placeholders with new images -->
+  <div class="illustrations-container">
+    <div class="placeholder-container">
+      <img src="var3.png" alt="Variation 3" class="placeholder">
+    </div>
+    <div class="placeholder-container">
+      <img src="var4.png" alt="Variation 4" class="placeholder">
+    </div>
+  </div>
+
+</body>
+</html>
