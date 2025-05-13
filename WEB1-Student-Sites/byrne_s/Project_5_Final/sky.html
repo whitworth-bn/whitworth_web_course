@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sky</title>
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/gcz5jxg.css">
+</head>
+
+<body>
+  <a href="index.html" class="sticky-button">HOME</a>
+  <div class="scroll-container" id="scroll-container">
+    <div class="clouds">
+      <div class="skycontent">
+        <h1 class="skyh1">The Sky</h1>
+        <p>The atmosphere is Earth’s invisible shield — a life-sustaining envelope of gases that keeps temperatures
+          stable, air breathable, and ecosystems thriving. But this delicate system is under increasing strain. From the
+          scorching cautionary tale of Venus to radical ideas like space mirrors and the invisible threat of
+          pollen-choked
+          air, our understanding of Earth's atmosphere — and the forces shaping it — has never been more urgent. This
+          page
+          explores the science, consequences, and potential solutions surrounding one of the most critical challenges of
+          our time: protecting the air we depend on.
+        </p>
+      </div>
+    </div>
+
+    <div class="clouds">
+      <div class="skycontent">
+        <h1>Could Earth become more like Venus? Let’s not find out.</h1>
+        <p>Earth is the only planet in the solar system with an atmosphere that can sustain life as we know it. But it
+          could have been very different — as evidenced by Venus. Superficially the closest planet to Earth in terms of
+          size and proximity to the sun, the atmospheres of early Earth and Venus were not drastically different, yet
+          today Earth is hospitable to life and Venus is a highly pressurized hotbox with an average daily temperature of
+          around 460 degrees Celsius (860 degrees Fahrenheit). Scientists believe that the sun may have “cooked off”
+          Venus’ water vapor, leaving only carbon dioxide — while the slightly cooler Earth retained its water (while
+          hosting living organisms that consumed carbon and produced oxygen), enough to tip the scales to an atmosphere
+          beneficial for life.
+          Now, humans are upsetting that delicate balance by pumping carbon dioxide into the atmosphere at an
+          unprecedented pace, particularly over the last 50 years. The last time there was this much carbon in the
+          atmosphere, humans didn’t exist. These CO2 levels are causing severe weather fluctuations, longer periods of
+          drought and flooding, and more frequent and intense storms. While it’s unlikely that our planet could ever see
+          an atmosphere like Venus, the history of our planetary neighbor is a cautionary tale to humans: Take care of
+          your air.
+        </p>
+      </div>
+    </div>
+
+    <div class="clouds">
+      <div class="skycontent">
+        <h1>Some scientists want to use giant space mirrors to fight climate change — but not everyone thinks this is a good idea.</h1>
+        <p>Revolutionary climate engineering technologies might be the missing piece to the puzzle that can help us meet
+          the climate goals outlined in the Paris Agreement. By the time the agreement goes into effect in 2020, the
+          planet’s warming may have outpaced the plan to manage it. This has led some scientists to propose new — and
+          sometimes polarizing — technologies, like artificial “trees” that would perform the same carbon-capturing duties
+          as real trees. Another idea is solar radiation management technology, a type of climate engineering that
+          reflects sunlight (and heat) back into space, thereby reducing the temperature on Earth.
+          Climate engineering technologies like this are meant to replace the services the atmosphere — and nature —
+          provide for free. Yet, as their detractors point out, their benefits are limited. For example, giant space
+          mirrors don’t address dangerous impacts of a warming climate, such as ocean acidification — only the warming
+          itself.
+        </p>
+      </div>
+    </div>
+
+    <div class="clouds">
+      <div class="skycontent">
+        <h1>You’re not imagining it — it is getting harder to breathe.</h1>
+        <p>You can thank climate change: The duration of seasons and more erratic weather patterns are causing plants to
+          release more pollen into the air earlier and for longer periods. If you’re one of the lucky people who doesn’t
+          currently suffer from seasonal allergies, that might change soon. The longer you’re exposed to an allergen (such
+          as pollen floating around for an extended period), the more likely you are to develop sensitivity to it.
+          Although for most people allergies are a seasonal annoyance, air quality causes damaging health effects for
+          millions around the world. Asthma rates have soared in the past decade due to air pollution and higher temperatures;
+          today about 235 million people suffer from it worldwide, and over 80% of asthma deaths occur in low- and lower-middle
+          income countries. Overall, the World Health Organization estimates that 3.7 million people die each year due to
+          air pollution.
+        </p>
+      </div>
+    </div>
+
+    <div class="clouds">
+      <div class="skycontent">
+        <h1>The eruption of one volcano can change the global temperature.</h1>
+        <p>When volcanoes erupt, they spew particles and gases into the air, which have different effects. Ash and sulfur
+          dioxide cause a cooling effect by reflecting sunlight away from the planet, while carbon dioxide causes warming
+          by contributing to the greenhouse effect (trapping heat energy).
+          Some scientists believe that the Earth has maintained a relatively even climate for so long due to the heating and
+          cooling caused by volcanic eruptions, going so far as to say climate change would be worse if not for the cooling
+          episodes provided by certain eruptions. The effects are considerable: After Mount Pinatubo in the Philippines
+          erupted in 1991, average global temperatures dropped about a degree Fahrenheit for two years; the 1815 eruption of
+          Tambora in Indonesia brought a dip in temperatures that caused crop failures in North America and Europe.
+        </p>
+      </div>
+    </div>
+
+    <div class="clouds">
+      <div class="skycontent">
+        <h1>Seeing through clouds = a win for science.</h1>
+        <p>The ability to scan Earth via satellite — known as “remote sensing” — has expanded considerably our
+          understanding of climate, forests, farming and more. But for years, scientists in tropical regions were hampered by cloud cover,
+          which obscured views from satellites and made precise monitoring and mapping of land difficult.
+          A relatively new open-source data platform that relies on old technology — radar — has changed all that,
+          penetrating all weather conditions and returning high-resolution images and data.
+          For scientific organizations such as Conservation International, this tool is helping to illuminate land-cover
+          change. With this technology, researchers are better able to observe when forests are cleared for farms and
+          other uses in places such as Indonesia and Peru. Combined with optical satellite data (think Google Earth), scientists
+          are able to get the full picture of what’s happening on the ground, then use the findings to inform conservation
+          efforts and policy decisions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function transformScroll(event) {
+      if (!event.deltaY) return;
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    const scrollContainer = document.getElementById('scroll-container');
+    scrollContainer.addEventListener('wheel', transformScroll);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+html,
+body {
+    font-family: indivisible, sans-serif;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+a {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+.subtitle {
+    font-size: 14px;
+}
+
+/* Home Button */
+
+.sticky-button {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+    padding: 12px 20px;
+    background-color: #4b4b4b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+    writing-mode: vertical-rl;
+    /* vertical text direction */
+    text-orientation: upright;
+    /* keeps letters upright */
+}
+
+.sticky-button:hover {
+    background-color: #929292;
+}
+
+/* Background photo settings */
+
+#svg-container {
+    position: relative;
+    z-index: 0;
+    /* make sure it's behind the popup */
+    height: 100%;
+}
+
+[data-name] {
+    transition: transform 0.3s ease;
+    transform-origin: initial;
+    cursor: pointer;
+}
+
+[data-name]:hover {
+    transform: scale(1.1);
+}
+
+
+/* Pop-Up */
+
+/* Popup container - can be anything you want */
+.popup {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45vw;
+    background-color: rgba(79, 79, 79, 0.75);
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup .hidden {
+    visibility: hidden;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Beach Page CSS Section */
+
+.parallax {
+    /* Set a specific height */
+    min-height: 110vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.beach {
+    background-color: #f6e4ad;
+}
+
+.wave-frame {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.wave-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    top: 15vh;
+}
+
+.ocean{
+    /* height: 1000px;  */
+    background-color: #6fa4cb; 
+    position: relative;
+
+}
+
+.oceanh1{
+    font-family: "gelato-luxe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.content{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+    background-image:url(../static/images/OceanOverlay.svg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.fact{
+    /* padding-top: 5%; */
+    padding-bottom: 10%;
+}
+
+.fact::after {
+  content: "";
+  display: block;
+  width: 99%;
+  /* Adjust width to control padding */
+  margin: 75px auto 0;
+  /* Creates space between text and the line */
+  border-bottom: 2px solid black;
+  /* The line itself */
+}
+
+.oceanintro{
+    font-size: 24px;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+/* Sky CSS */
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+    background-image: url("../static/images/SkyBack.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* <-- Crucial: match scrollable width */
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+.clouds {
+    min-width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url("../static/images/clouds.svg");
+}
+
+.skycontent{
+    max-width: 55vw;
+    padding-right: 15%;
+    font-size: 24px;
+}
+
+.skyh1{
+    padding:0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: "blow-up", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+/* Desert CSS */
+
+.desert {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../static/images/DesertBack.png");
+    background-size: cover;
+    /* or 120vw auto if you need it wider */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    /* <--- This is key */
+    overflow: visible;
+}
+
+
+.cacti {
+    background-image: url(../static/images/cacti.svg);
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.cacti.swap {
+    background-image: url("../static/images/cactiswap.svg");
+}
+
+.deserth1{
+    font-family: cottonwood-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+}
+
+.desertcontent{
+    color: black;
+    padding-top: 15%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+/* Forest CSS */
+
+.forest {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../static/images/ForestBack.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page{
+    width: 100vw;
+    min-height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    width: 45vw;
+    background-color: rgba(79, 79, 79, 0.75);
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+    z-index: 1000;
+    padding: 50px;
+}
+
+.foresth1{
+    font-family: pinecone-mvb-rough2-condense, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+}
+
+/* Mountain Back */
+
+.mountain{
+    height: 400vh;
+    width: 100%;
+    background-image: url("../static/images/MountainBack.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center 375px; /* moves image down 50px */
+}
+
+.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content:space-around;
+  position: absolute;
+  bottom: 0;
+  width: 50vw;
+  padding-left:25%;
+  top: 60vh;
+}
+
+.mountainh1{
+padding-top: 50px;
+font-family: "battery-park", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 125px;
+}
+
+.mountaincontent{
+    padding-top: 25%;
+}
