@@ -39,25 +39,25 @@ fetch('static/images/homepage.html')
                 const name = el.getAttribute('id');
                 // Redirect based on the section name
                 if (name === 'Generative_Object') {
-                    window.location.href = '../mountain.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/mountain.html';
                 }
                 else if (name === 'Generative_Object-2') {
-                    window.location.href = '../grassland.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/grassland.html';
                 }
                 else if (name === 'Generative_Object-3') {
-                    window.location.href = '../arctic.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/arctic.html';
                 }
                 else if (name === 'Generative_Object-4') {
-                    window.location.href = '../forest.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/forest.html';
                 }
                 else if (name === 'Generative_Object-5') {
-                    window.location.href = '../ocean.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/ocean.html';
                 }
                 else if (name === 'Generative_Object-6') {
-                    window.location.href = '../desert.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/desert.html';
                 }
                 else if (name === 'Generative_Object-7') {
-                    window.location.href = '../sky.html';
+                    window.location.href = 'whitworth_web_course/WEB1-Student-Sites/byrne_s/Project_5_Final/sky.html';
                 }
                 // Add more cases as needed
             });
