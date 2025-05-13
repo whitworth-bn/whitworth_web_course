@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<h1>
+	This is my final for Web Design!
+	
+	</h1>
+	
+	<h3>
+	I decided to create a website for a brand I came up with and designed, Green Earth. Green Earth is a tea brand that cares about the earth.
+	
+	</h3>
+	 <div class="container" 
+         style="text-align: center; margin-top: 5em;">
+        <img src= "mockupwelcome.jpg" width=100%
+            onclick="enlargeImg()"
+            id="img1" />
+        <br><br><br>
+
+        <button onclick="resetImg()">Reset</button>
+    </div>
+
+	<div class="container" 
+         style="text-align: center; margin-top: 5em;">
+        <img src= "mockupourstory.jpg" width=100%
+            onclick="enlargeImg()"
+            id="img1" />
+        <br><br><br>
+
+        <button onclick="resetImg()">Reset</button>
+    </div>
+	
+	<div class="container" 
+         style="text-align: center; margin-top: 5em;">
+        <img src= "mockupproduct.jpg" width=100%
+            onclick="enlargeImg()"
+            id="img1" />
+        <br><br><br>
+
+        <button onclick="resetImg()">Reset</button>
+    </div>
+	
+	<div class="container" 
+         style="text-align: center; margin-top: 5em;">
+        <img src= "mockupourproduct.jpg" width=100%
+            onclick="enlargeImg()"
+            id="img1" />
+        <br><br><br>
+
+        <button onclick="resetImg()">Reset</button>
+    </div>
+	
+	
+    <!-- script to set display property -->
+    <script>
+        img = document.getElementById("img1");
+      
+        function enlargeImg() {
+            img.style.transform = "scale(1.5)";
+            img.style.transition = "transform 0.25s ease";
+        }
+      
+        // Function to reset image size
+        function resetImg() {
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+    </script>
+	
+</body>
+</html>
