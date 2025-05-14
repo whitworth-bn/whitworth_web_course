@@ -1,0 +1,93 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+    background-color: rgb(9, 9, 9);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2.5vh;
+    padding-top: 1vh;
+    text-align: right;
+    background-color: rgb(77, 23, 23);
+    box-shadow: 3px, 3px;
+    min-height: 13%;
+    z-index: 99;
+}
+
+.menu ul li{
+    display: inline-block;
+    font-size: 18pt;
+    padding: 1.75%;
+    z-index: 99;
+}
+
+li a{
+    text-decoration: none;
+    color: #a83333;
+}
+
+li a:hover{
+    color: rgb(199, 199, 200);
+}
+
+.midText{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+.midText h1{
+    font-size: 40pt;
+    margin-top: -2%;
+    margin-bottom: -2%;
+}
+.midText p{
+    font-size: 20pt;
+}
+
+.red-text {
+color: #a83333;
+}
+.off-text {
+color: rgb(165, 165, 170);
+}
+
+.homeIcon{
+    position: absolute;
+    padding: .25%;
+}
+.homeIcon img{
+    height : 10vh;
+}
+.logo{
+    position: absolute;
+    right : 5%;
+    bottom: 10%;
+}
+.logo img{
+    height : 60vh;
+}
+
+.backShape {
+    position: absolute;
+    right : -10%;
+    bottom: 0%;
+	width: 45%;
+	height: 88.5%;
+	transform: skew(-20deg);
+	background: #a83333;
+    z-index: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a span:hover{
+    color: rgb(165, 165, 170);
+}
