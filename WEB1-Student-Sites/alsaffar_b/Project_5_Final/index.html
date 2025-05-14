@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a8b, #ff6a00); /* Gradient background for a cool effect */
+            color: #333; 
+            line-height: 1.6;
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        /* Navigation Bar Styling */
+        .topnav {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .topnav a {
+            display: inline-block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+
+        .topnav a:hover {
+            background-color: #ff6a00; /* Change to a matching orange color on hover */
+            color: white;
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Smooth shadow effect */
+            margin: 50px 10%;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: #333;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .hero img {
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05); /* Image zoom on hover */
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Light transparent background */
+        }
+
+        .services h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services li {
+            font-size: 1.2em;
+            color: #555;
+            padding: 10px 0;
+            transition: color 0.3s ease;
+        }
+
+        .services li:hover {
+            color: #ff6a00; /* Change to the same orange color on hover */
+            cursor: pointer;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 50px 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #portfolio h1 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .portfolio-item {
+            display: inline-block;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05); /* Zoom effect on image hover */
+        }
+
+        .portfolio-item h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .portfolio-item p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="new multi page final.html">Home</a>
+        <a href="about final.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        <section class="hero">
+            <center>
+                <h1><strong>Welcome to My Portfolio</strong></h1>
+                <p>Discover my work, and experience</p>
+            </center>
+            <img src="Screenshot 2025-04-30 at 11.15.02 AM.png" width="400" height="300" alt="My Image">
+        </section>
+
+        <section class="services">
+            <h2>What I Can Do</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>Create an Aesthetic Living Space</li>
+            </ul>
+        </section>
+    </main>
+
+    <section id="portfolio">
+        <h1>My Work</h1>
+        <div class="portfolio-item">
+            <h2>The Broken Trust</h2>
+            <p>This is a book cover that I have created from a synopsis I’ve written. This work required many hours and many details that went into it, along with multiple versions.</p>
+            <img src="bookcover index.pdf" alt="Project 1">
+        </div>
+    </section>
+
+</body>
+</html>
+
+
