@@ -5,7 +5,7 @@ body {
     padding: 40px;
     line-height: 1.6;
     background-color: #f9f9f9;
-    background-image: url('/images/background.png'); /* Replace with your image path */
+    background-image: url('images/background.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the whole width */
     background-position: center center; /* Keeps the image centered */
     background-attachment: fixed; /* Makes the background fixed in place */
