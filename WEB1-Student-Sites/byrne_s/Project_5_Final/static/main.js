@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextImage = document.getElementById("waveImageNext");
 
     let currentFrame = 1;
-    currentImage.src = `static/images/frames/wave${currentFrame}.svg`;
+    currentImage.src = `images/frames/wave${currentFrame}.svg`;
 
     window.addEventListener("scroll", () => {
         const scrollTop = window.scrollY;
