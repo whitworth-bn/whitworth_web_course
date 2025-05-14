@@ -1,0 +1,38 @@
+body {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#final-project {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.visit-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color:  #F4C430;
+  color: gray;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color:  #9a7b1d;
+  color: white;
+}
