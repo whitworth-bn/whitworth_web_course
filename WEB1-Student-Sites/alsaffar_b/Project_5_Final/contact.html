@@ -3,16 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Contact</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FF8A00, #E52E71); /* Warm gradient background */
+            color: #333;
+            line-height: 1.6;
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        /* Navigation Bar Styling */
+        .topnav {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            overflow: hidden;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .topnav a {
+            display: inline-block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .topnav a:hover {
+            background-color: #FF5722; /* Bright orange hover effect */
+            color: white;
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Contact Section */
+        #contact {
+            margin-top: 100px; /* Space for the fixed navbar */
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+            margin: 80px 10% 50px;
+        }
+
+        #contact h1 {
+            font-size: 3.5em;
+            color: #333;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #contact p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #FF8A00; /* Focus effect in warm orange */
+        }
+
+        form button {
+            padding: 15px;
+            font-size: 1.1em;
+            color: white;
+            background-color: #E52E71; /* Pinkish button color */
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #FF5722; /* Hover effect in bright orange */
+            transform: scale(1.05); /* Button zoom effect */
+        }
+
+        /* Social Links */
+        #contact h2 {
+            font-size: 2.2em;
+            color: #333;
+            margin-top: 40px;
+        }
+
+        #contact ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #contact li {
+            margin: 10px 0;
+        }
+
+        #contact a {
+            font-size: 1.2em;
+            color: #E52E71; /* Pinkish color for social links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact a:hover {
+            color: #FF8A00; /* Change to warm orange on hover */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark footer */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
-     <div class="topnav">
-            <a href="muti-page.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="logo.ai">Portfolio</a>
-            <a href="contact.html">Contact</a>
-	</div>
+
+    <div class="topnav">
+        <a href="new multi page final.html">Home</a>
+        <a href="about final.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <section id="contact">
         <h1>Contact Me</h1>
@@ -38,9 +182,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Batool Alsaffar. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
-
 
