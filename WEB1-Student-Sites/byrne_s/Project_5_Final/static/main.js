@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextImage = document.getElementById("waveImageNext");
 
     let currentFrame = 1;
-    currentImage.src = `images/frames/wave${currentFrame}.svg`;
+    currentImage.src = `static/images/frames/wave${currentFrame}.svg`;
 
     window.addEventListener("scroll", () => {
         const scrollTop = window.scrollY;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const frameIndex = Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount)) + 1;
 
         if (frameIndex !== currentFrame) {
-            nextImage.src = `images/frames/wave${frameIndex}.svg`;
+            nextImage.src = `static/images/frames/wave${frameIndex}.svg`;
             nextImage.classList.remove("fade");
 
             setTimeout(() => {
