@@ -1,0 +1,404 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>index.html</title>
+<style type="text/css">
+@import url("stylesheet.css");
+</style>
+</head>
+
+<body>
+    <!-- Behind the Scenes Section (Placed above the game) -->
+    <style>
+        #character-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .character-box {
+            width: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+			background-color: tan 
+        }
+        .character-box:hover {
+            background-color: #f0f0f0;
+        }
+        .character-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 2px solid black;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: 250px;
+        }
+    </style>
+
+    <!-- Character Info Section -->
+    <div id="character-info">
+        <!-- Amazon Woman Info -->
+        <div class="character-box" id="amazon-woman-box">
+            <h2>Amazon Woman</h2>
+            <img src="images/amazon1.png" alt="Amazon Woman">
+            <div class="character-details" id="amazon-woman-details">
+                <p>The Amazon Woman is the protagonist fighting against misogyny in the game. She is powerful and determined to take down those who perpetuate harmful ideologies.</p>
+            </div>
+        </div>
+
+        <!-- Man 1 Info (Andrew Tate) -->
+        <div class="character-box" id="man1-box">
+            <h2>Andrew Tate</h2>
+            <img src="images/man1.png" alt="Andrew Tate">
+            <div class="character-details" id="man1-details">
+                <p>Andrew Tate is depicted as a villain in the game. His actions reflect toxic and misogynistic behavior that Amazon Woman aims to fight against.</p>
+            </div>
+        </div>
+
+        <!-- Man 2 Info (Jeffrey Epstein) -->
+        <div class="character-box" id="man2-box">
+            <h2>Jeffrey Epstein</h2>
+            <img src="images/man2.png" alt="Jeffrey Epstein">
+            <div class="character-details" id="man2-details">
+                <p>Jeffrey Epstein is also portrayed as a misogynistic character in the game. Like Tate, he represents toxic masculinity, and is overall a terrible terrible human being, in which the Amazon Woman must defeat.</p>
+            </div>
+        </div>
+    </div>
+
+<h1>Amazon Rebellion: The Fall of Misogyny</h1>
+	<canvas id="gameCanvas" width="1200" height="800"></canvas>
+<!-- Bottom Buttons - Placed under the Game Canvas -->
+<div id="buttons-container" style="margin-top: 20px; text-align: center;">
+    <!-- Button to navigate to the Amazon Woman page -->
+    <a href="amazon-women.html">
+        <button class="info-button" style="display: inline-block; width: 250px; margin: 10px; padding: 15px; text-align: center; background-color: #BA696B; color: white; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;"> 
+            Learn More About Amazon Woman
+        </button>
+		<br> 
+		<br>
+		<br>
+    </a>
+
+    <!-- Button to navigate to the Epstein & Tate page -->
+    <a href="epstein-tate.html">
+        <button class="info-button" style="display: inline-block; width: 250px; margin: 10px; padding: 15px; text-align: center; background-color: #BA696B; color: white; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+            Learn More About Epstein & Tate
+        </button>
+    </a>
+</div>
+
+   <!-- JavaScript Game Script -->
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+        const background = new Image();
+        background.src = 'images/amazonforest.gif';
+
+        background.onload = () => {
+            ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+        };
+
+        background.onerror = () => {
+            console.error("Failed to load amazonforest.gif. Check the path!");
+        }; 
+// ==================
+// Load Images
+// ==================
+const amazonWoman = new Image();
+amazonWoman.src = 'images/amazon1.png';
+
+const man1 = new Image();
+man1.src = 'images/man1.png';
+
+const man2 = new Image();
+man2.src = 'images/man2.png';
+
+// ==================
+// Game Variables
+// ==================
+const player = {
+    x: 50,
+    y: 50,
+    width: 250,
+    height: 300,
+    speed: 2
+};
+
+// Enemies with health
+const enemies = [
+    { 
+        x: 600, 
+        y: 200, 
+        img: man1, 
+        width: 250, 
+        height: 300, 
+        speed: 1, 
+        knockback: false,
+        health: 100,
+        isAlive: true
+    },
+    { 
+        x: 800, 
+        y: 450, 
+        img: man2, 
+        width: 250, 
+        height: 300, 
+        speed: 1, 
+        knockback: false,
+        health: 100,
+        isAlive: true
+    }
+];
+
+// ==================
+// Game State Variables
+// ==================
+let gameStarted = false;
+const keys = {};
+
+// Key Listeners
+window.addEventListener('keydown', (e) => {
+    keys[e.key] = true;
+    if (e.key === 'Shift' && !gameStarted) {
+        gameStarted = true; // Set gameStarted to true when Shift is pressed
+    }
+});
+
+window.addEventListener('keyup', (e) => {
+    keys[e.key] = false;
+});
+
+// ==================
+// Game Functions
+// ==================
+
+// Collision Detection
+function checkCollision(player, enemy) {
+    return player.x < enemy.x + enemy.width &&
+           player.x + player.width > enemy.x &&
+           player.y < enemy.y + enemy.height &&
+           player.y + player.height > enemy.y;
+}
+
+// Knockback Logic
+function applyKnockback(enemy, direction) {
+    const knockbackSpeed = 10;
+    if (direction === 'left') enemy.x -= knockbackSpeed;
+    if (direction === 'right') enemy.x += knockbackSpeed;
+    if (direction === 'up') enemy.y -= knockbackSpeed;
+    if (direction === 'down') enemy.y += knockbackSpeed;
+}
+
+// Decrease Health
+function decreaseHealth(enemy) {
+    if (enemy.isAlive) {
+        enemy.health -= 10;
+        if (enemy.health <= 0) {
+            enemy.health = 0;
+            enemy.isAlive = false; // Set to false if health is 0
+            animateEnemyFall(enemy); // Trigger the fall animation
+        }
+    }
+}
+
+// Draw Health Bar
+function drawHealthBar(enemy) {
+    if (!enemy.isAlive) return;
+    ctx.fillStyle = 'red';
+    ctx.fillRect(enemy.x, enemy.y - 10, enemy.width, 10);
+    ctx.fillStyle = 'green';
+    ctx.fillRect(enemy.x, enemy.y - 10, (enemy.width * enemy.health) / 100, 10);
+}
+
+// Enemy Fall Animation
+function animateEnemyFall(enemy) {
+    const fallInterval = setInterval(() => {
+        enemy.y += 5;
+        if (enemy.y > canvas.height) {
+            clearInterval(fallInterval);
+        }
+    }, 50);
+}
+
+// ==================
+// Victory Logic
+// ==================
+function checkGameWin() {
+    if (enemies.every(enemy => !enemy.isAlive)) {
+        showVictoryMessage();
+    }
+}
+
+// Show Victory Message
+function showVictoryMessage() {
+    const victoryOverlay = document.createElement('div');
+    victoryOverlay.id = 'victoryOverlay';
+    victoryOverlay.innerHTML = `
+  <div class="victory-content">
+    <h1>You Defeated Misogyny!</h1>
+    <p>The Amazon Women stand victorious.</p>
+    <a href="index.html">
+        <button>Play Again</button>
+    </a>
+</div>
+    `;
+    document.body.appendChild(victoryOverlay);
+
+    // CSS styles for the animation
+    const styles = document.createElement('style');
+    styles.innerHTML = `
+        #victoryOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+    `;
+    document.head.appendChild(styles);
+}
+
+// Restart the Game
+function restartGame() {
+    document.getElementById('victoryOverlay').remove();
+    enemies.forEach(enemy => {
+        enemy.isAlive = true;
+        enemy.health = 100;
+        enemy.x = Math.random() * (canvas.width - enemy.width);
+        enemy.y = Math.random() * (canvas.height - enemy.height);
+    });
+    gameStarted = false;
+    main();
+}
+
+// ==================
+// Game Loop
+// ==================
+function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Player Movement
+    if (keys['ArrowUp'] || keys['w']) player.y -= player.speed;
+    if (keys['ArrowDown'] || keys['s']) player.y += player.speed;
+    if (keys['ArrowLeft'] || keys['a']) player.x -= player.speed;
+    if (keys['ArrowRight'] || keys['d']) player.x += player.speed;
+
+    // Enemy Logic
+    enemies.forEach(enemy => {
+        if (checkCollision(player, enemy) && !enemy.knockback && enemy.isAlive) {
+            if (player.x < enemy.x) applyKnockback(enemy, 'left');
+            if (player.x > enemy.x) applyKnockback(enemy, 'right');
+            if (player.y < enemy.y) applyKnockback(enemy, 'up');
+            if (player.y > enemy.y) applyKnockback(enemy, 'down');
+            
+            decreaseHealth(enemy);
+
+            enemy.knockback = true;
+            setTimeout(() => enemy.knockback = false, 100);
+        }
+
+        if (enemy.isAlive) {
+            enemy.x += enemy.speed;
+            if (enemy.x > canvas.width - enemy.width || enemy.x < 0) {
+                enemy.speed = -enemy.speed;
+            }
+            drawHealthBar(enemy);
+            ctx.drawImage(enemy.img, enemy.x, enemy.y, enemy.width, enemy.height);
+        }
+    });
+
+    // Check if the game is won
+    checkGameWin();
+
+    // Draw player
+    ctx.drawImage(amazonWoman, player.x, player.y, player.width, player.height);
+
+    requestAnimationFrame(gameLoop);
+}
+
+
+// Draw Start Screen
+function drawStartScreen() {
+    ctx.fillStyle = 'black';
+    ctx.font = '30px Arial';
+    ctx.fillText('Press Shift to Start', canvas.width / 3, canvas.height / 2);
+}
+
+// Main Loop
+function main() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (!gameStarted) {
+        drawStartScreen();
+        requestAnimationFrame(main);
+    } else {
+        gameLoop();
+    }
+}
+
+// Wait for images to load before starting the main loop
+function startGameWhenReady() {
+    if (amazonWoman.complete && man1.complete && man2.complete) {
+        console.log("Images loaded successfully!");
+        main();
+    } else {
+        setTimeout(startGameWhenReady, 50);
+    }
+}
+
+startGameWhenReady();
+""
+
+// Toggle character information display
+function toggleInfo(infoId) {
+    const infoElement = document.getElementById(infoId);
+    
+    // Toggle visibility of the character information
+    if (infoElement.classList.contains('visible')) {
+        infoElement.classList.remove('visible');
+    } else {
+        infoElement.classList.add('visible');
+    }
+}
+ // Function to toggle the visibility of character details
+        function toggleDetails(characterId) {
+            const details = document.getElementById(characterId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block"; // Show details
+            } else {
+                details.style.display = "none"; // Hide details
+            }
+        }
+
+        // Adding click event listeners to each character box
+        document.getElementById('amazon-woman-box').addEventListener('click', () => {
+            toggleDetails('amazon-woman-details');
+        });
+
+        document.getElementById('man1-box').addEventListener('click', () => {
+            toggleDetails('man1-details');
+        });
+
+        document.getElementById('man2-box').addEventListener('click', () => {
+            toggleDetails('man2-details');
+        });
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	</body>
+</html>
