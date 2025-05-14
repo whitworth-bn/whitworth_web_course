@@ -1,6 +1,6 @@
 // Wave animation, switching between frames
 document.addEventListener("DOMContentLoaded", function () {
-    const frameCount = 30;
+    const frameCount = 10;
     const currentImage = document.getElementById("waveImageCurrent");
     const nextImage = document.getElementById("waveImageNext");
 
