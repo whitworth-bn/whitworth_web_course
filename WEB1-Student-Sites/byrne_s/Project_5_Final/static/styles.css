@@ -187,7 +187,7 @@ a {
     padding-left: 30%;
     padding-right: 30%;
     padding-bottom: 5%;
-    background-image:url(../static/images/OceanOverlay.svg);
+    background-image:url(images/OceanOverlay.svg);
     background-repeat: none;
     background-size: cover;
 }
@@ -225,7 +225,7 @@ a {
     padding: 0;
     margin: 0;
 
-    background-image: url("../static/images/SkyBack.svg");
+    background-image: url("images/SkyBack.svg");
     background-repeat: no-repeat;
     background-size: cover;
     /* <-- Crucial: match scrollable width */
@@ -241,7 +241,7 @@ a {
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url("../static/images/clouds.svg");
+    background-image: url("images/clouds.svg");
 }
 
 .skycontent{
@@ -270,7 +270,7 @@ a {
 .desert {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../static/images/DesertBack.png");
+    background-image: url("images/DesertBack.png");
     background-size: cover;
     /* or 120vw auto if you need it wider */
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ a {
 
 
 .cacti {
-    background-image: url(../static/images/cacti.svg);
+    background-image: url("images/cacti.svg");
     background-repeat: no-repeat;
     min-width: 100vw;
     height: 100vh;
@@ -290,7 +290,7 @@ a {
 }
 
 .cacti.swap {
-    background-image: url("../static/images/cactiswap.svg");
+    background-image: url("images/cactiswap.svg");
 }
 
 .deserth1{
@@ -312,7 +312,7 @@ a {
 .forest {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../static/images/ForestBack.svg");
+    background-image: url("images/ForestBack.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -350,7 +350,7 @@ a {
 .mountain{
     height: 400vh;
     width: 100%;
-    background-image: url("../static/images/MountainBack.svg");
+    background-image: url("images/MountainBack.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
